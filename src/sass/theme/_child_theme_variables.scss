@@ -1,0 +1,48 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
+$primary: $purple; // Once we've changed the value, we'll also make it the primary brand color.
+$text-color: #475467;
+$theme-black:#07101A;
+$heading-color:#101828;
+$navy:#08084E;
+$pest:#44999A;
+$sweet:#DA376F;
+$white:#FFFFFF;
+$gray: #475467;
+@mixin tab {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
