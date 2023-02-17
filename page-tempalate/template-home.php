@@ -565,7 +565,7 @@ get_header();
         <div class="row">
             <div class="col-6">
                 <div class="contact-form">
-                    <h2 class="title">See Beyond.</h2>
+                    <?php echo do_shortcode('[gravityform id="1" title="true"]' ); ?>
                 </div>
             </div>
         </div>
