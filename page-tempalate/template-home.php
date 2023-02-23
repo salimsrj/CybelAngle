@@ -11,9 +11,8 @@
 defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
-<section class="home_banner" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/home_banner.png);     background-size: 50% auto;
-    background-repeat: no-repeat;
-    background-position: right;">
+<section class="home_banner" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/home-banner.jpg); background-size: 100%;
+    background-repeat: no-repeat;">
     <div class="container">
         <div class="col-md-6">
             <div class="content-box">
@@ -558,7 +557,7 @@ get_header();
     </div>
 </section>
 
-<section class="home-contact-us" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/images/contact-us-img.jpg');     background-size: 50%;
+<section class="home-contact-us" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/images/contact-us-img.jpg');     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right center;">
     <div class="container">
