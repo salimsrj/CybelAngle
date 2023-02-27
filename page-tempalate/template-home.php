@@ -562,7 +562,7 @@ get_header();
     background-position: right center;">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="contact-form">
                     <?php echo do_shortcode('[gravityform id="1" title="true"]' ); ?>
                 </div>

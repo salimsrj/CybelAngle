@@ -12,7 +12,25 @@ var swiper = new Swiper(".logo-carousel", {
         delay: 4000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
-    }
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        }
+    },
 });
 var swiper = new Swiper(".logo-container", {
     spaceBetween: 30,
@@ -38,6 +56,24 @@ var swiper1 = new Swiper(".carousel-box", {
         delay: 4000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        990: {
+            slidesPerView: 3.4,
+            spaceBetween: 30,
+        }
     },
     navigation: {
         nextEl: ".button-next",

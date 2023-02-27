@@ -349,5 +349,106 @@ get_header();
     </div>
 </section>
 
+<section class="contact-address" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/blue-map.jpg);background-position: center center;
+    background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-box">
+                    <div class="section-head">
+                        <span class="pre-title">Contact us</span>
+                        <h2 class="title">We’d love to hear from you</h2>
+                        <div class="content">
+                            <p>We have offices and teams all around the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="address">
+                        <div class="item">
+                            <h3>Support</h3>
+                            <p>Our friendly team is here to help.</p>
+                            <a href="#" class="link">support@cybelangel.com</a>
+                        </div>
+
+                        <div class="item">
+                            <h3>Support</h3>
+                            <p>Our friendly team is here to help.</p>
+                            <a href="#" class="link">support@cybelangel.com</a>
+                        </div>
+
+                        <div class="item">
+                            <h3>Support</h3>
+                            <p>Our friendly team is here to help.</p>
+                            <a href="#" class="link">support@cybelangel.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="quote-with-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="quote-item">
+                    <div class="image-box">
+                        <div class="author-img">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/olivia.png" alt="olivia">
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="ratings">
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="quote">
+                            <p>“I've been welcomed warmly to the team and now I never want to leave.”</p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">
+                                <h4>— Olivia Rhye</h4>
+                                <span class="designation">Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="inner-newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <div class="banner-newsletter">
+                    <div class="from-container">
+                    <div class="newsletter-head">
+                    <h2 class="title">Join our careers newsletter</h2>
+                    <div class="content">
+                        <p>Be the first to know when new jobs are posted!</p>
+                    </div>
+                    </div>
+                        <div class="form">
+                            <div class="form-items">
+                                <div class="left-box">
+                                    <input type="text" class="form-control" placeholder="Enter your email" name="email">
+                                    <span class="notes">We care about your data in our <a href="">privacy policy</a>.</span>
+                                </div>
+                                <div class="right-box">
+                                    <button class="btn btn-newsletter">Subscribe</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
 <?php
 get_footer();

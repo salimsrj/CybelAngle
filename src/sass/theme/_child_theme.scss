@@ -16,6 +16,33 @@
                     max-width: 1280px;
                 }
             }
+            header button.navbar-toggler {
+                padding: 8px 10px;
+                font-size: 1.25rem;
+                line-height: 1;
+                background-color: #1a194f;
+                border: 1px solid #ffffff;
+                border-radius: 0.25rem;
+                transition: box-shadow .15s ease-in-out;
+                box-shadow: none;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            @include mobile {
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                    width: 20px;
+                    height: 20px;
+                }
+                ul.navbar-nav {
+                    background-color: #1a194f;
+                    padding: 15px;
+                }
+                a.navbar-brand {
+                    max-width: 200px;
+                }
+            }
             .btn.btn-white {
                 font-style: normal;
                 font-weight: 600;
@@ -36,6 +63,9 @@
                     margin: 0;
                     padding: 0;
                     text-align: right;
+                    @include mobile {
+                        text-align: center;
+                    }
                     li {
                         display: inline-block;
                         a {
@@ -44,6 +74,10 @@
                             color: $white;
                             font-size: 14px;
                             line-height: 16px;
+                            @include mobile {
+                                padding: 10px;
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -56,6 +90,9 @@
                         font-size: 16px;
                         line-height: 16px;
                         color: $theme-black;
+                        @include mobile {
+                            color: $white;
+                        }
                     }
                     &:last-child {
                         a {
@@ -70,21 +107,43 @@
                             text-align: center;
                             margin-left: 30px;
                             color: $white;
+                            @include mobile {
+                                margin-left: 0;
+                                margin-top: 10px;
+                                top: 0;
+                                width: 100%;
+                                padding: 10px;
+                            }
                         }
                     }
                 }
             }
             section.home_banner {
+                @include mobile {
+                    background-size: cover !important;
+                    background-repeat: no-repeat !important;
+                    background-position: right !important;
+                    padding: 15px 0;
+                }
                 .content-box {
                     max-width: 600px;
                     min-height: 500px;
                     display: flex;
                     align-items: center;
+                    @include mobile {
+                        background: rgba(255, 255, 255, .5);
+                        padding: 15px;
+                    }
                     h1.title {
                         font-weight: 600;
                         font-size: 54px;
                         line-height: 64px;
                         margin-bottom: 20px;
+                        @include mobile {
+                            font-size: 30px;
+                            line-height: 40px;
+                            margin-bottom: 15px;
+                        }
                     }
                     .content {
                         font-weight: 500;
@@ -105,6 +164,9 @@
                                 }
                             }
                             display: inline-block;
+                            @include mobile {
+                                display: block;
+                            }
                             a.btn.btn-white {
                                 background: $white;
                                 border: 1px solid #D0D5DD;
@@ -116,6 +178,12 @@
                                 color: #344054;
                                 padding: 16px 28px;
                                 display: inline-block;
+                                @include mobile {
+                                    display: block;
+                                    padding: 10px 20px;
+                                    margin-right: 0;
+                                    margin-bottom: 15px;
+                                }
                             }
                             a.btn.btn-pest {
                                 padding: 16px 28px;
@@ -128,6 +196,11 @@
                                 line-height: 28px;
                                 color: $white;
                                 display: inline-block;
+                                @include mobile {
+                                    display: block;
+                                    padding: 10px 20px;
+                                    margin-right: 0;
+                                }
                             }
                         }
                     }
@@ -139,15 +212,25 @@
                 .content-box {
                     display: flex;
                     flex-wrap: wrap;
+                    @include mobile {
+                        display: block;
+                    }
                     .content {
                         max-width: 220px;
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 22px;
                         color: $white;
+                        @include mobile {
+                            margin: 0 auto;
+                            text-align: center;
+                        }
                     }
                     .logo-carousel {
                         max-width: calc(100% - 220px);
+                        @include mobile {
+                            max-width: 100%;
+                        }
                     }
                 }
             }
@@ -179,6 +262,10 @@
                         font-size: 40px;
                         line-height: 56px;
                         margin-bottom: 20px;
+                        @include mobile {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
                     }
                 }
                 .nav.nav-tabs {
@@ -217,8 +304,13 @@
             $font-family_1: 'Inter',
             sans-serif;
             section.metric {
-                padding: 80px;
+                padding: 80px 0;
                 font-family: $font-family_1;
+                @include mobile {
+                    .content-box {
+                        margin-bottom: 30px;
+                    }
+                }
                 h2.title {
                     font-style: normal;
                     font-weight: 600;
@@ -226,6 +318,10 @@
                     line-height: 44px;
                     letter-spacing: -0.02em;
                     margin-bottom: 20px;
+                    @include mobile {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
                 }
                 .content {
                     font-style: normal;
@@ -240,20 +336,28 @@
                     ul {
                         list-style: none;
                         display: flex;
-                        display: flex;
                         flex-wrap: wrap;
                         padding: 0;
+                        // @include mobile {
+                        //     display: block;
+                        // }
                         li.matric-item {
                             display: flex;
                             flex-wrap: wrap;
                             gap: 15px;
                             width: 50%;
+                            @include mobile {
+                                display: block;
+                            }
                             .icon {
                                 width: 55px;
                                 height: 55px;
                             }
                             .number-with-text {
                                 width: calc( 100% - 55px - 15px);
+                                @include mobile {
+                                    width: calc( 100% - 20px);
+                                }
                                 .number-text {
                                     font-style: normal;
                                     font-weight: 600;
@@ -261,6 +365,10 @@
                                     line-height: 60px;
                                     letter-spacing: -0.02em;
                                     color: $color_3;
+                                    @include mobile {
+                                        font-size: 30px;
+                                        line-height: 40px;
+                                    }
                                 }
                                 .content {
                                     font-weight: 600;
@@ -351,6 +459,9 @@
             section.cta {
                 padding: 80px 60px;
                 color: #EAECF0;
+                @include mobile {
+                    padding: 40px 30px;
+                }
                 h2.title {
                     font-weight: 600;
                     font-size: 36px;
@@ -358,6 +469,10 @@
                     letter-spacing: -0.02em;
                     color: $white;
                     margin-bottom: 30px;
+                    @include mobile {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
                 }
                 a.btn.btn-sweet {
                     margin-top: 35px;
@@ -403,8 +518,14 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 50px;
+                    @include mobile {
+                        display: block;
+                    }
                     .testimonial-list {
                         width: calc(50% - 50px);
+                        @include mobile {
+                            width: 100%;
+                        }
                         span.ratings {
                             color: #FEC84B;
                             display: block;
@@ -419,8 +540,8 @@
                                 color: #101828;
                                 margin-bottom: 35px;
                                 @include mobile {
-                                    font-size: 30px;
-                                    line-height: 40px;
+                                    font-size: 22px;
+                                    line-height: 30px;
                                 }
                             }
                             .auther-info {
@@ -476,6 +597,9 @@
                     }
                     .image-box {
                         width: 50%;
+                        @include mobile {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -496,6 +620,10 @@
                         text-align: center;
                         color: #07101A;
                         margin-bottom: 20px;
+                        @include mobile {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
                     }
                     .content {
                         font-weight: 500;
@@ -511,6 +639,9 @@
                     flex-wrap: wrap;
                     gap: 100px;
                     padding: 65px 0 50px;
+                    @include mobile {
+                        display: block;
+                    }
                     &:last-child {
                         padding-bottom: 0;
                     }
@@ -518,6 +649,10 @@
                         width: calc(50% - 50px);
                         display: flex;
                         align-items: center;
+                        @include mobile {
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
                         .title-content-box {
                             max-width: 540px;
                             h2.title {
@@ -526,6 +661,10 @@
                                 line-height: 56px;
                                 color: #07101A;
                                 margin-bottom: 25px;
+                                @include mobile {
+                                    font-size: 30px;
+                                    line-height: 40px;
+                                }
                             }
                             .btn.btn-white {
                                 font-style: normal;
@@ -551,6 +690,9 @@
                     }
                     .img-box {
                         width: calc(50% - 50px);
+                        @include mobile {
+                            width: 100%;
+                        }
                     }
                     &.img-left {
                         .image-box {
@@ -661,8 +803,15 @@
             section.home-contact-us {
                 min-height: 1100px;
                 padding: 50px 0;
+                @include mobile {
+                    background: none !important;
+                }
                 .contact-form {
                     padding-right: 65px;
+                    @include mobile {
+                        padding-right: 0;
+                        padding: 30px;
+                    }
                     h2.gform_title {
                         font-weight: 600;
                         font-size: 40px;
@@ -2667,6 +2816,9 @@
                             font-size: 16px;
                             line-height: 24px;
                             color: #DA376F;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
                             &::after {
                                 content: '';
                                 height: 10px;
@@ -2674,11 +2826,341 @@
                                 background: url('../images/arrow-top.png');
                                 display: inline-block;
                                 margin-left: 12px;
-                                position: absolute;
-                                top: 0;
-                                right: 0;
                             }
                         }
+                    }
+                }
+            }
+            section.contact-address {
+                min-height: 1000px;
+                padding: 100px 0;
+                @include mobile {
+                    padding: 50px 0;
+                }
+                .content-box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    min-height: 800px;
+                    align-content: space-between;
+                }
+                .section-head {
+                    text-align: center;
+                    color: $white;
+                    width: 100%;
+                    .pre-title {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #4C9498;
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    h2.title {
+                        font-weight: 600;
+                        font-size: 48px;
+                        line-height: 60px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        color: #F9FAFB;
+                        margin-bottom: 20px;
+                    }
+                    .content {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: #98A2B3;
+                    }
+                }
+                .address {
+                    width: 100%;
+                    color: $white;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item {
+                        width: 33.3%;
+                        text-align: center;
+                        padding: 0 10px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #98A2B3;
+                        .flag {
+                            width: 50px;
+                            margin: 0 auto;
+                            margin-bottom: 15px;
+                        }
+                        h3 {
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #F9FAFB;
+                            margin-bottom: 10px;
+                        }
+                        a.link {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #DA376F;
+                        }
+                    }
+                }
+            }
+            section.inner-newsletter {
+                padding-bottom: 100px;
+                .newsletter-head {
+                    text-align: center;
+                    margin-bottom: 30px;
+                    h2.title {
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 44px;
+                        letter-spacing: -0.02em;
+                        color: #101828;
+                        margin-bottom: 20px;
+                    }
+                    .content {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #475467;
+                    }
+                }
+                .banner-newsletter {
+                    background-color: #F9FAFB;
+                    padding: 65px 0;
+                    border-radius: 16px;
+                    .from-container {
+                        max-width: 500px;
+                        margin: 0 auto;
+                    }
+                    .form-items {
+                        display: flex;
+                        gap: 15px;
+                        flex-wrap: wrap;
+                        .left-box {
+                            width: calc(100% - 120px - 15px);
+                        }
+                        .right-box {
+                            width: 120px;
+                        }
+                        input.form-control {
+                            border: 1px solid #D0D5DD;
+                            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                            border-radius: 8px;
+                        }
+                    }
+                    span.notes,
+                    a {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #475467;
+                        a {
+                            border-bottom: 1px solid #475467;
+                        }
+                    }
+                    input.form-control {
+                        min-height: 44px;
+                        border-radius: 8px;
+                    }
+                    button.btn.btn-newsletter {
+                        background: #DA376F;
+                        border: 1px solid #C61551;
+                        border-radius: 8px;
+                        padding: 10px 24px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $white;
+                        min-height: 44px;
+                        box-shadow: none;
+                    }
+                }
+            }
+            section.two-col-text-with-img {
+                background: linear-gradient(to bottom, #F9FAFB 60%, #FFFFFF 0%);
+                padding: 96px 0 50px;
+                .content-box {
+                    .content {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #475467;
+                        column-count: 2;
+                        margin-bottom: 60px;
+                    }
+                }
+                .section-head {
+                    max-width: 560px;
+                    span.sub-title {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #44999A;
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    h2.title {
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 44px;
+                        letter-spacing: -0.02em;
+                        color: #101828;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            section.quotes {
+                padding: 96px 0;
+                background: #F9FAFB;
+                .quote {
+                    .author-info {
+                        margin: 0 auto 50px;
+                        max-width: 200px;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: #475467;
+                        .image-container {
+                            width: 65px;
+                            height: 65px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin: 0 auto 18px;
+                        }
+                        h4 {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 28px;
+                            text-align: center;
+                            color: #101828;
+                        }
+                    }
+                    .content {
+                        font-weight: 500;
+                        font-size: 48px;
+                        line-height: 60px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        color: #101828;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            section.quote-with-img {
+                padding: 96px 0;
+                @include mobile {
+                    padding: 40px 0;
+                }
+                .quote-item {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 128px;
+                    .image-box {
+                        width: 328px;
+                    }
+                    .content-box {
+                        width: calc(100% - 328px - 128px);
+                        .ratings {
+                            color: #FEC84B;
+                            font-size: 20px;
+                            margin-bottom: 18px;
+                        }
+                        .quote {
+                            font-weight: 500;
+                            font-size: 36px;
+                            line-height: 44px;
+                            letter-spacing: -0.02em;
+                            color: #101828;
+                            margin-bottom: 40px;
+                        }
+                        .author-name {
+                            h4 {
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: #101828;
+                            }
+                            span.designation {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #475467;
+                            }
+                        }
+                    }
+                }
+            }
+            section.features-three-col-with-img {
+                padding: 50px 0;
+                .feature-item {
+                    margin-bottom: 40px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .icon {
+                        max-width: 55px;
+                        margin-bottom: 20px;
+                    }
+                    h3.title {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #101828;
+                    }
+                    .content {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #475467;
+                    }
+                }
+                .section-head {
+                    max-width: 768px;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    span.pre-title {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #DA366F;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                    h2.title {
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 44px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        color: #101828;
+                    }
+                    .content {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: #475467;
+                        margin-bottom: 20px;
+                    }
+                }
+                .three-col-box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    .col-one {
+                        width: 30%;
+                    }
+                    .col-two {
+                        width: calc(40% - 60px);
+                    }
+                    .col-three {
+                        width: 30%;
                     }
                 }
             }
@@ -2743,8 +3225,14 @@
                         flex-wrap: wrap;
                         justify-content: space-between;
                         gap: 20px;
+                        @include mobile {
+                            display: block;
+                        }
                         .footer-col-1 {
                             width: 22%;
+                            @include mobile {
+                                width: 100%;
+                            }
                             a.logo {
                                 max-width: 150px;
                                 display: inline-block;
@@ -2761,6 +3249,9 @@
                         .footer-col-4,
                         .footer-col-5 {
                             width: 17.5%;
+                            @include mobile {
+                                width: 100%;
+                            }
                         }
                         .widget {
                             h3.title {
@@ -2802,8 +3293,12 @@
                     .social-menu {
                         padding: 30px 0;
                         display: flex;
+                        @include mobile {
+                            display: block;
+                        }
                         .footer-menu {
                             ul {
+                                padding: 0;
                                 li {
                                     a {
                                         font-size: 16px;
@@ -2823,6 +3318,7 @@
                         }
                         .social-icons {
                             ul {
+                                padding: 0;
                                 li {
                                     a {
                                         font-size: 25px;
