@@ -37,7 +37,121 @@ get_header();
         </div>
     </div>
 </section>
+<section class="features-with-steps" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/features_section_bg.png);     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-box">
+                    <span class="pre-title">Features</span>
+                    <h2 class="title">Asset Discovery and Monitoring, the Foundation for CybelAngel EASMX</h2>
+                    <div class="content">
+                        <p>Stay ahead of cyber criminals with the one ADM solution that discovers assets using the same ‘outside-in’ perspective. CybelAngel ADM is the only asset discovery solution powered by multiple search methodologies to provide an exhaustive, real-time, living map of your entire external digital landscape so you can uncover security flaws, evaluate, and address vulnerabilities before systems can be compromised.</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="#" class="btn btn-sweet">See Exposures That May Have You at Risk</a>
+                    </div>
+                </div>
 
+                <div class="steps">
+                    <h3 class="title">Protect Your External Attack Surface in Four Easy Steps</h3>
+                    <div class="step-container">
+                        <div class="image-container">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/steps.png" alt="step">
+                        </div>                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-head">
+                    <span class="pre-title">Who we are</span>
+                    <h2 class="title">How it Works</h2>
+                </div>
+                <div class="content-box">
+                    <div class="left-box">
+                        <div class="content">
+                            <p>CybelAngel’s Asset Discovery and Monitoring is the only solution of its kind to combine two complementary discovery techniques to enable the most exhaustive mapping of unknown external assets. This combination technology searches deeper and broader to find shadow IT that other solutions can’t.</p>
+                            <p><strong>Pivoting:</strong></p>
+                            <ul>
+                                <li>Finds the “owned unknowns” by starting from a list of known assets to uncover shadow services and assets deployed without the knowledge of your IT or security departments.</li>
+                            </ul>
+                            <p><strong>Keyword matching:</strong></p>
+                            <ul>
+                                <li>Finds the “owned unknowns” by starting from a list of known assets to uncover shadow services and assets deployed without the knowledge of your IT or security departments.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="step-items">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-chat-green.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>Complete</h4>
+                                    <p>CybelAngel’s advanced search technology offers the most exhaustive asset search available.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-chat-green.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>Complete</h4>
+                                    <p>CybelAngel’s advanced search technology offers the most exhaustive asset search available.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-chat-green.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>Complete</h4>
+                                    <p>CybelAngel’s advanced search technology offers the most exhaustive asset search available.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-chat-green.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>Complete</h4>
+                                    <p>CybelAngel’s advanced search technology offers the most exhaustive asset search available.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-chat-green.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>Complete</h4>
+                                    <p>CybelAngel’s advanced search technology offers the most exhaustive asset search available.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/office.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="features-three-col-with-img">
     <div class="container">
         <div class="row">
@@ -107,6 +221,8 @@ get_header();
         </div>
     </div>
 </section>
+
+
 
 <section class="testimonial-style2">
     <div class="container">

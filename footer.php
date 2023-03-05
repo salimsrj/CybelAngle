@@ -28,10 +28,10 @@ defined( 'ABSPATH' ) || exit;
 						<div class="right-box">
 							<div class="form">
 								<div class="row">
-									<div class="col-8">
+									<div class="col-md-8">
 										<input type = "text" class = "form-control" placeholder = "Enter your email" name = "email">
 									</div>
-									<div class="col-4">
+									<div class="col-md-4">
 										<button class="btn btn-newsletter">Subscribe</button>
 									</div>
 								</div>

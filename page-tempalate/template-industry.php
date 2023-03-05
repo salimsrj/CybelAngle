@@ -61,7 +61,7 @@ get_header();
                                             alt="icon">
                                     </div>
                                     <div class="content">
-                                        <h3>Whats the Risk?/h3>
+                                        <h3>Whats the Risk?</h3>
                                         <p>Roughly 20% of ransomware attacks have secondary targets or motives. (VERIZON DBIR 2021)</p>
                                         <p>Services saw a 61% increase in Ransomware attacks in 2021. (VERSION DBIR)</p>
                                     </div>
