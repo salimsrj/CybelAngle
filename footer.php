@@ -77,13 +77,11 @@ defined( 'ABSPATH' ) || exit;
 								<h3 class="title">cybersecurity Challenges</h3>
 								<ul>
 									<li><a href="#">cybersecurity Challenges</a></li>
-									<li><a href="#">Manufacturing</a></li>
-									<li><a href="#">Retail</a></li>
-									<li><a href="#">IT & Consulting</a></li>
-									<li><a href="#">Telco/Mobile</a></li>
-									<li><a href="#">Asset Discovery</a></li>
-									<li><a href="#">Data Breech Prevention</a></li>
-									<li><a href="#">Account Takeover Prevention</a></li>
+									<li><a href="#">Ransomware Prevention</a></li>
+									<li><a href="#">Data Leaks</a></li>
+									<li><a href="#">Exposed Credentials</a></li>
+									<li><a href="#">Cloud Migration</a></li>
+									<li><a href="#">Explore the Platform</a></li>
 								</ul>
 							</div>
 						</div>
@@ -91,14 +89,13 @@ defined( 'ABSPATH' ) || exit;
 							<div class="widget">
 								<h3 class="title">Blog</h3>
 								<ul>
-									<li><a href="#">Banking & Finance</a></li>
-									<li><a href="#">Manufacturing</a></li>
-									<li><a href="#">Retail</a></li>
-									<li><a href="#">IT & Consulting</a></li>
-									<li><a href="#">Telco/Mobile</a></li>
-									<li><a href="#">Asset Discovery</a></li>
-									<li><a href="#">Data Breech Prevention</a></li>
-									<li><a href="#">Account Takeover Prevention</a></li>
+									<li><a href="#">Resource Center</a></li>
+									<li><a href="#">Whitepapers & Guides</a></li>
+									<li><a href="#">Ecplore by Topic</a></li>
+									<li><a href="#">Webinars</a></li>
+									<li><a href="#">Case Studies</a></li>
+									<li><a href="#">Events</a></li>
+									
 								</ul>
 							</div>
 						</div>
@@ -107,13 +104,13 @@ defined( 'ABSPATH' ) || exit;
 								<h3 class="title">Quick Links</h3>
 								<ul>
 									<li><a href="#">Privacy Notice for California Residents</a></li>
-									<li><a href="#">Manufacturing</a></li>
-									<li><a href="#">Retail</a></li>
-									<li><a href="#">IT & Consulting</a></li>
-									<li><a href="#">Telco/Mobile</a></li>
-									<li><a href="#">Asset Discovery</a></li>
-									<li><a href="#">Data Breech Prevention</a></li>
-									<li><a href="#">Account Takeover Prevention</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Login</a></li>
+									<li><a href="#">Support</a></li>
+									<li><a href="#">Gartner 5 Star Insights</a></li>
+									<li><a href="#">Press Release</a></li>
+									<li><a href="#">Request a Demo</a></li>
+									<li><a href="#">Partner With Us</a></li>
 								</ul>
 							</div>
 						</div>
