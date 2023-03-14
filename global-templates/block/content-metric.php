@@ -5,71 +5,53 @@
  */
 
 $title = get_field('title');
+$content = get_field('content');
+$button = get_field('button');
+$matric_list = get_field('matric_list');
 ?>
 <section class="metric">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="content-box">
-                    <h2 class="title">We do things differently...</h2>
+                    <?php if($title != ''): ?>
+                    <h2 class="title"> <?php echo $title; ?></h2>
+                    <?php endif; ?>
+                    <?php if($content != ''): ?>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliteiusmod tempor incididunt ut labore et
-                            dolore magna.</p>
+                        <?php echo $content; ?>
                     </div>
-                    <a href="#" class="btn btn-sweet">Why CybelAngel?</a>
+                    <?php endif; ?>
+                    <?php if($button): ?>
+                    <a href="<?php echo $button['url']; ?>" class="btn btn-sweet"><?php echo $button['label']; ?></a>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="matric-list">
+                    <?php if($matric_list): ?>
                     <ul>
+                        <?php foreach($matric_list as $matric): ?>
                         <li class="matric-item">
-                            <div class="icon"><img
-                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-flash.png" alt="icon">
+                            <?php if($matric['icon']): ?>
+                            <div class="icon">
+                                <img src="<?php echo $matric['icon']['url'];?>" alt="<?php echo $matric['icon']['alt'];?>">
                             </div>
+                            <?php endif; ?>
                             <div class="number-with-text">
-                                <div class="number-text"><span class="number">400</span><span>+</span></div>
+                                <div class="number-text"><span class="number"><?php echo $matric['number'];?></span><span><?php echo $matric['after_number_text'];?></span></div>
+                                <?php if($matric['content'] != ''): ?>
                                 <div class="content">
-                                    <span>Integer Metric Item</span>
+                                    <span><?php echo $matric['content']; ?></span>
                                 </div>
+                                <?php endif; ?>
                             </div>
-                        </li>
+                        </li> 
+                        <?php endforeach; ?>
 
-                        <li class="matric-item">
-                            <div class="icon"><img
-                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-flash.png" alt="icon">
-                            </div>
-                            <div class="number-with-text">
-                                <div class="number-text"><span class="number">600</span><span>%</span></div>
-                                <div class="content">
-                                    <span>Percentage Metric</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="matric-item">
-                            <div class="icon"><img
-                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-flash.png" alt="icon">
-                            </div>
-                            <div class="number-with-text">
-                                <div class="number-text"><span class="number">10</span><span>k</span></div>
-                                <div class="content">
-                                    <span>Integer Metric Item</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="matric-item">
-                            <div class="icon"><img
-                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-flash.png" alt="icon">
-                            </div>
-                            <div class="number-with-text">
-                                <div class="number-text"><span class="number">200</span><span>+</span></div>
-                                <div class="content">
-                                    <span>Integer Metric Item</span>
-                                </div>
-                            </div>
-                        </li>
+                        
                     </ul>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

@@ -5,25 +5,37 @@
  */
 
 $title = get_field('title');
+$content = get_field('content');
+$buttons = get_field('buttons');
+$background_image = get_field('background_image');
 ?>
-<section class="home_banner" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/home-banner.jpg); background-size: 100%;
+<section class="home_banner" style="background: url(<?php echo $background_image['url']; ?>); background-size: 100%;
     background-repeat: no-repeat;">
     <div class="container">
         <div class="col-md-6">
             <div class="content-box">
                 <div class="banner-box">
                     <div class="left-box">
-                        <h1 class="title">Eliminate exposures you can’t see with CybelAngel.</h1>
+                        <?php if($title != ''): ?>
+                        <h1 class="title"><?php echo $title; ?></h1>
+                        <?php endif; ?>
+                        <?php if($content != ''): ?>
                         <div class="content">
-                            <p>Pre-emptive cybersecurity to detect & eliminate exposures you can’t see… before others
-                                can. </p>
+                            <?php echo $content; ?>
                         </div>
+                        <?php endif; ?>
+                        <?php if($buttons): ?>
                         <div class="btn-container">
                             <ul>
-                                <li><a class="btn btn-white" href="#">Explore Case Studies</a></li>
-                                <li><a class="btn btn-pest" href="#">Get in touch</a></li>
+                                <?php if($buttons['button_one']['url'] != ''):?>
+                                <li><a class="btn btn-white" href="<?php echo $buttons['button_one']['url']; ?>"><?php echo $buttons['button_one']['label']; ?></a></li>
+                                <?php endif; ?>
+                                <?php if($buttons['button_two']['url'] != ''):?>
+                                <li><a class="btn btn-pest" href="<?php echo $buttons['button_two']['url']; ?>"><?php echo $buttons['button_two']['label']; ?></a></li>
+                                <?php endif; ?>
                             </ul>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

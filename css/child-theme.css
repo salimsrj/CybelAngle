@@ -15705,6 +15705,9 @@ body ul.navbar-nav li a.nav-link {
     color: #FFFFFF;
   }
 }
+body ul.navbar-nav li a.dropdown-toggle.nav-link.show {
+  color: #DA376F;
+}
 body ul.navbar-nav li ul.dropdown-menu {
   background: #FFFFFF;
   border: 1px solid #EAECF0;

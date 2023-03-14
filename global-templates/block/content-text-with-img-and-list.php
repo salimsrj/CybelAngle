@@ -5,23 +5,32 @@
  */
 
 $title = get_field('title');
+$content = get_field('content');
+$button = get_field('button');
+$feature_list = get_field('feature_list');
 ?>
 <section class="text-with-img-and-list">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="content-box">
-                    <h2 class="title">External Attack Surface Management from CybelAngel (EASMX)</h2>
+                    <?php if($title != ''): ?>
+                    <h2 class="title"><?php echo $title; ?></h2>
+                    <?php endif; ?>
+                    <?php if($content != ''): ?>
                     <div class="content">
-                        <p>We take pride in protecting a global network of 100’s of enterprise clients, knowing they are
-                            more secure because of our advanced EASM protection.</p>
+                        <?php echo $content; ?>
                     </div>
-                    <a href="#" class="btn btn-sweet">Learn More</a>
+                    <?php endif; ?>
+                    <?php if($button): ?>
+                    <a href="<?php echo $button['url']; ?>" class="btn btn-sweet"><?php echo $button['label']; ?></a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
+                <?php if($feature_list): ?>
                 <div class="feature-list">
                     <ul>
                         <li>
@@ -46,6 +55,7 @@ $title = get_field('title');
                         </li>
                     </ul>
                 </div>
+                <?php endif; ?>
             </div>
             <div class="col-md-6">
                 <div class="image-container">
