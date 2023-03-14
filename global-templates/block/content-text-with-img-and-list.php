@@ -8,6 +8,8 @@ $title = get_field('title');
 $content = get_field('content');
 $button = get_field('button');
 $feature_list = get_field('feature_list');
+$feature_image = get_field('feature_image');
+
 ?>
 <section class="text-with-img-and-list">
     <div class="container">
@@ -33,34 +35,24 @@ $feature_list = get_field('feature_list');
                 <?php if($feature_list): ?>
                 <div class="feature-list">
                     <ul>
+                        <?php foreach($feature_list as $feature): ?>
                         <li>
-                            <h3>Xtended Visibility</h3>
-                            <p>Multiple search methodologies find ‘unknowns’ across 1st to Nth-party systems; no other
-                                vendor can match it.</p>
+                        <h3><?php echo $feature['title']; ?></h3>
+                        <?php echo $feature['content']; ?>
                         </li>
-                        <li>
-                            <h3>Comprehensive Coverage</h3>
-                            <p>CybelAngel blocks attacker entry with breadth to uncover internet-connected assets
-                                (doors) and the exposures (keys) used for access.</p>
-                        </li>
-                        <li>
-                            <h3>Relentless Pursuit</h3>
-                            <p>Continuous scanning covers the entirety of the internet every 24 hours to find assets,
-                                detect exposures and limit liability.</p>
-                        </li>
-                        <li>
-                            <h3>Zero False Positives</h3>
-                            <p>Advanced machine learning and human intelligence meticulously sift, score and prioritize
-                                findings into only ‘must see’ critical alerts.</p>
-                        </li>
+                        <?php endforeach; ?>
+                            
+                        
                     </ul>
                 </div>
                 <?php endif; ?>
             </div>
             <div class="col-md-6">
+            <?php if($feature_image): ?>
                 <div class="image-container">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/features.jpg" alt="features">
+                    <img src="<?php echo $feature_image['url']; ?>" alt="<?php echo $feature_image['alt']; ?>">
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
