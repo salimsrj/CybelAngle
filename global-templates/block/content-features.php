@@ -83,9 +83,9 @@ $features_tab = get_field('features_tab');
                         ?>
                         <div class="tab-pane fade <?php if($i== 1){echo 'show active'; }?>" id="content_<?php echo $i; ?>" role="tabpanel"
                             aria-labelledby="nav-tab-<?php echo $i; ?>">
-                            <div class="video_container">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video1.png" alt="">
-                            </div>
+                            <!-- <div class="video_container">
+                                <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/video1.png" alt="">
+                            </div> -->
 
                             <?php if($tab['tab_content'] != ''): ?>
                                 <h3><?php echo $tab['tab_content']; ?></h3>
@@ -96,16 +96,7 @@ $features_tab = get_field('features_tab');
                             $i++;
                             endforeach;
                             ?>
-                        <!-- <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab">
-                            <div class="video_container">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            ...</div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            ...</div> -->
+                        
                     </div>
                 </div>
                 <?php endif; ?>

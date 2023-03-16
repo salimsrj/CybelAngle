@@ -33,9 +33,9 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 			<div class="row">
 				<div class="col-12">
 					<ul>
-						<li><a href="#">Contact</a></li>
+						<li><a href="https://cybelangeldev.wpengine.com/contact/">Contact</a></li>
 						<li><a href="#">Search</a></li>
-						<li><a href="#">Careers</a></li>
+						<li><a href="https://cybelangeldev.wpengine.com/cybel-careers/">Careers</a></li>
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Login</a></li>
 					</ul>

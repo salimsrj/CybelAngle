@@ -5,14 +5,21 @@
  */
 
 $title = get_field('title');
+$content = get_field('content');
+$button = get_field('button');
+$article = get_field('article');
 ?>
 <section class="cta" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/images/cta-bg.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2 class="title">Start today on a path to a more secure tomorrow.</h2>
-                <p>Start your 30-day free trial today.</p>
-                <a href="#" class="btn btn-sweet">View all Resources</a>
+                <?php if($title != ''): ?>
+                <h2 class="title"><?php echo $title; ?></h2>
+                <?php endif; ?>
+                <?php echo $content; ?>
+                <?php if($button): ?>
+                <a href="<?php echo $button['url']; ?>" class="btn btn-sweet"><?php echo $button['label']; ?></a>
+                <?php endif; ?>
             </div>
 
             <div class="col-md-6">
