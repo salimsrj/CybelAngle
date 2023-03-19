@@ -4,64 +4,77 @@
  *
  */
 
-$title = get_field('title');
+$block_header = get_field('block_header');
+$section_title = $block_header['title'];
+$header_content = $block_header['content'];
+$header_button = $block_header['button'];
+
+$articles = get_field('articles');
 ?>
 <section class="text-with-img">
     <div class="container">
+        <?php if($block_header):?>
         <div class="row">
             <div class="col-12">
                 <div class="section-head">
-                    <h2 class="section-title">Start today on a path to a more secure tomorrow.</h2>
+                    <?php if($section_title != ''): ?>
+                    <h2 class="section-title"><?php echo $section_title; ?></h2>
+                    <?php endif; ?>
+
+                    <?php if($header_content != ''): ?>
                     <div class="content">
-                        <p>We take pride in protecting a global network of 100’s of enterprise clients, knowing they are
-                            more secure because of our advanced EASM protection.</p>
+                        <?php echo $header_content; ?>
                     </div>
-                    <a href="#" class="btn btn-sweet">Why CybelAngel?</a>
+                    <?php endif; ?>
+                    <?php if($header_button['url'] != ''): ?>
+                    <a href="<?php echo $header_button['url']; ?>" class="btn btn-sweet"><?php echo $header_button['label']; ?></a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
+        <?php endif; ?>
+        <?php if($articles): ?>
         <div class="row">
             <div class="col-12">
-                <div class="text-and-img-block">
+            
+                <?php foreach($articles  as $article): 
+                    $title = $article['title'];
+                    $content = $article['content'];
+                    $button = $article['button'];
+                    $image = $article['image'];
+                    $image_position = $article['image_position'];
+                ?>   
+                <div class="text-and-img-block <?php echo ($image_position == 'left')? 'img-left': 'img-right';?>">
                     <div class="content-box">
                         <div class="title-content-box">
-                            <h2 class="title">Secure Your Attack Surface</h2>
+                            <?php if($title != ''): ?>
+                            <h2 class="title"><?php echo $title; ?></h2>
+                            <?php endif; ?>
+                            <?php if($content != ''): ?>
                             <div class="content">
-                                <p>External Attack Surface Management from CybelAngel let’s you see beyond perimeters
-                                    and find peace of mind knowing you can find it and remediate it, before hackers even
-                                    know it’s there.</p>
+                                <?php echo $content; ?>
                             </div>
-                            <a href="#" class="btn btn-white">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="img-box">
-                        <div class="image-container">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web-security.jpg"
-                                alt="Web Security">
-                        </div>
-                    </div>
-                </div>
+                            <?php endif; ?>
 
-                <div class="text-and-img-block img-left">
-                    <div class="content-box">
-                        <div class="title-content-box">
-                            <h2 class="title">Secure Your Attack Surface</h2>
-                            <div class="content">
-                                <p>External Attack Surface Management from CybelAngel let’s you see beyond perimeters
-                                    and find peace of mind knowing you can find it and remediate it, before hackers even
-                                    know it’s there.</p>
-                            </div>
-                            <a href="#" class="btn btn-white">Learn more</a>
+                            <?php if($button['url'] != ''): ?>
+                            <a href="<?php echo $button['url']; ?>" class="btn btn-white"><?php echo $button['label']; ?></a>
+                            <?php endif; ?>
+
                         </div>
                     </div>
                     <div class="img-box">
+                        <?php if($image): ?>
                         <div class="image-container">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/human-with-machine.jpg"
-                                alt="Web Security">
+                            <img src="<?php echo $image['url']; ?>"
+                                alt="<?php echo $image['alt']; ?>">
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
+                <?php endforeach; ?>
+
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </section>
