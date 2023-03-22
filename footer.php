@@ -73,17 +73,7 @@ $footerText = $footer_logo_and_text['text'];
 								<?php dynamic_sidebar('footer_one'); ?>
 							<?php endif; ?>
 
-								<!-- <h3 class="title">solutions</h3>
-								<ul>
-									<li><a href="#">Banking & Finance</a></li>
-									<li><a href="#">Manufacturing</a></li>
-									<li><a href="#">Retail</a></li>
-									<li><a href="#">IT & Consulting</a></li>
-									<li><a href="#">Telco/Mobile</a></li>
-									<li><a href="#">Asset Discovery</a></li>
-									<li><a href="#">Data Breech Prevention</a></li>
-									<li><a href="#">Account Takeover Prevention</a></li>
-								</ul> -->
+							
 							</div>
 						</div>
 						<div class="footer-col-3">
@@ -91,15 +81,7 @@ $footerText = $footer_logo_and_text['text'];
 							<?php if ( is_active_sidebar( 'footer_two' ) ) : ?>
 								<?php dynamic_sidebar('footer_two'); ?>
 							<?php endif; ?>
-								<!-- <h3 class="title">cybersecurity Challenges</h3>
-								<ul>
-									<li><a href="#">cybersecurity Challenges</a></li>
-									<li><a href="#">Ransomware Prevention</a></li>
-									<li><a href="#">Data Leaks</a></li>
-									<li><a href="#">Exposed Credentials</a></li>
-									<li><a href="#">Cloud Migration</a></li>
-									<li><a href="#">Explore the Platform</a></li>
-								</ul> -->
+							
 							</div>
 						</div>
 						<div class="footer-col-4">
@@ -108,34 +90,14 @@ $footerText = $footer_logo_and_text['text'];
 							<?php if ( is_active_sidebar( 'footer_three' ) ) : ?>
 								<?php dynamic_sidebar('footer_three'); ?>
 							<?php endif; ?>
-								<!-- <h3 class="title">Blog</h3>
-								<ul>
-									<li><a href="#">Resource Center</a></li>
-									<li><a href="#">Whitepapers & Guides</a></li>
-									<li><a href="#">Ecplore by Topic</a></li>
-									<li><a href="#">Webinars</a></li>
-									<li><a href="#">Case Studies</a></li>
-									<li><a href="#">Events</a></li>
-									
-								</ul> -->
+							
 							</div>
 						</div>
 						<div class="footer-col-5">
 							<div class="widget">
 							<?php if ( is_active_sidebar( 'footer_four' ) ) : ?>
 								<?php dynamic_sidebar('footer_four'); ?>
-							<?php endif; ?>
-								<!-- <h3 class="title">Quick Links</h3>
-								<ul>
-									<li><a href="#">Privacy Notice for California Residents</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Login</a></li>
-									<li><a href="#">Support</a></li>
-									<li><a href="#">Gartner 5 Star Insights</a></li>
-									<li><a href="#">Press Release</a></li>
-									<li><a href="#">Request a Demo</a></li>
-									<li><a href="#">Partner With Us</a></li>
-								</ul> -->
+							<?php endif; ?>							
 							</div>
 						</div>
 					</div>
@@ -157,10 +119,19 @@ $footerText = $footer_logo_and_text['text'];
 				<div class="col-md-6">
 					<div class="social-menu">
 						<div class="footer-menu">
-							<ul>
+
+						<?php
+							wp_nav_menu(
+								array(
+									'theme_location'  => 'footer_bottom_menu'
+								)
+							);
+							?>
+							<!-- <ul>
 								<li><a href="#">Terms & Conditions</a></li>
 								<li><a href="#">Privacy Policy</a></li>
-							</ul>
+							</ul> -->
+							
 						</div>
 						<div class="social-icons">
 							<?php if($social_links): ?>

@@ -209,6 +209,19 @@ function my_acf_init() {
             'icon'				=> 'format-aside',
             'keywords'			=> array('Home Contact', 'Contact Us'),
         ));
+
+        
+        acf_register_block(array(
+            'name'				=> 'inner-page-banner',
+            'title'				=> __('Inner Page Banner'),
+            'description'		=> __('A custom block for Inner Page Banner.'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Inner Page Banner', 'Banner'),
+        ));
+
+
     }
 
 }
