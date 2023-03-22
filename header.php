@@ -32,13 +32,20 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<ul>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'top_menu'
+						)
+					);
+					?>
+					<!-- <ul>
 						<li><a href="https://cybelangeldev.wpengine.com/contact/">Contact</a></li>
 						<li><a href="#">Search</a></li>
 						<li><a href="https://cybelangeldev.wpengine.com/cybel-careers/">Careers</a></li>
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Login</a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 		</div>

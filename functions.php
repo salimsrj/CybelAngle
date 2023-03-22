@@ -245,3 +245,65 @@ function my_wp_nav_menu_objects( $items, $args ) {
     
 }
 
+if( function_exists('acf_add_options_page') ) {    
+    acf_add_options_page();    
+}
+
+add_action( 'widgets_init', 'cybel_angel_widgets_init' );
+function cybel_angel_widgets_init() {
+register_sidebar(
+    array(
+        'name'          => __( 'Footer One', 'understrap' ),
+        'id'            => 'footer_one',
+        'description'   => __( 'Footer One', 'understrap' ),
+        'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+        'after_widget'  => '</div><!-- .footer-widget -->',
+        'before_title'  => '<h3 class="widget-title title">',
+        'after_title'   => '</h3>',
+    )
+);
+
+
+
+register_sidebar(
+    array(
+        'name'          => __( 'Footer Two', 'understrap' ),
+        'id'            => 'footer_two',
+        'description'   => __( 'Footer Two', 'understrap' ),
+        'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+        'after_widget'  => '</div><!-- .footer-widget -->',
+        'before_title'  => '<h3 class="widget-title title">',
+        'after_title'   => '</h3>',
+    )
+);
+
+
+register_sidebar(
+    array(
+        'name'          => __( 'Footer Three', 'understrap' ),
+        'id'            => 'footer_three',
+        'description'   => __( 'Footer Three', 'understrap' ),
+        'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+        'after_widget'  => '</div><!-- .footer-widget -->',
+        'before_title'  => '<h3 class="widget-title title">',
+        'after_title'   => '</h3>',
+    )
+);
+
+register_sidebar(
+    array(
+        'name'          => __( 'Footer Four', 'understrap' ),
+        'id'            => 'footer_four',
+        'description'   => __( 'Footer Four', 'understrap' ),
+        'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+        'after_widget'  => '</div><!-- .footer-widget -->',
+        'before_title'  => '<h3 class="widget-title title">',
+        'after_title'   => '</h3>',
+    )
+);
+
+
+}
+
+
+    
