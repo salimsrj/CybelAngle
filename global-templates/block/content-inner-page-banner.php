@@ -2,9 +2,13 @@
 /**
  * Block Name: Inner Page Banner
  */
-$header = get_field('header');
+$background_image = get_field('background_image');
+$pre_title = get_field('pre_title');
+$title = get_field('title');
+$content = get_field('content');
+$buttons = get_field('buttons');
 ?>
-<section class="inner-page-banner" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/solution_banner.jpg);     background-size: cover;
+<section class="inner-page-banner" style="background: url(<?php echo $background_image['url']; ?>);     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;">
     <div class="container">
@@ -12,19 +16,32 @@ $header = get_field('header');
             <div class="content-box">
                 <div class="banner-box">
                     <div class="left-box">
-                        <span class="pre-header">Supply Chain & Third Part Risks</span>
-                        <h1 class="title">Third-Party Access Opens Doors to Risks</h1>
+                        <?php if($pre_title != ''): ?>
+                        <span class="pre-header"><?php echo $pre_title; ?></span>
+                        <?php endif; ?>
+                        <?php if($title != ''): ?>
+                        <h1 class="title"><?php echo $title; ?></h1>
+                        <?php endif; ?>
+                        <?php if($content != ''): ?>
                         <div class="content">
                             <p>Your digital security is only as good as your partners’ digital security. Your IT
                                 vendors, manufacturers, suppliers, and service providers all pose some risk to your
                                 network.</p>
                         </div>
+                        <?php endif; ?>
+
+                        <?php if($buttons): ?>
                         <div class="btn-container">
                             <ul>
-                                <li><a class="btn btn-white" href="#">Explore Case Studies</a></li>
-                                <li><a class="btn btn-pest" href="#">Get in touch</a></li>
+                                <?php if($buttons['button_one']): ?>
+                                <li><a class="btn btn-white" href="<?php echo $buttons['button_one']['url']; ?>"><?php echo $buttons['button_one']['label']; ?></a></li>
+                                <?php endif; ?>
+                                <?php if($buttons['button_two']): ?>
+                                <li><a class="btn btn-pest" href="<?php echo $buttons['button_one']['url']; ?>"><?php echo $buttons['button_two']['label']; ?></a></li>
+                                <?php endif; ?>
                             </ul>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

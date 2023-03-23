@@ -220,6 +220,67 @@ function my_acf_init() {
             'icon'				=> 'format-aside',
             'keywords'			=> array('Inner Page Banner', 'Banner'),
         ));
+        acf_register_block(array(
+            'name'				=> 'two-column-text-with-icon',
+            'title'				=> __('Two column text with icon'),
+            'description'		=> __('A custom block for Two column text with icon.'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Two column text with icon', 'text', 'icon', 'Two Column'),
+        ));
+
+        acf_register_block(array(
+            'name'				=> 'testimonials-style-2',
+            'title'				=> __('Testimonial Style Two'),
+            'description'		=> __('A custom block for Testimonial Style Two.'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Testimonial Style Two', 'Testimonia', 'Style Two'),
+        ));
+
+        acf_register_block(array(
+            'name'				=> 'releted-resources',
+            'title'				=> __('Related Resources'),
+            'description'		=> __('A custom block for Related Resources.'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Related Resources', 'Resources'),
+        ));
+
+        acf_register_block(array(
+            'name'				=> 'partners-logo',
+            'title'				=> __('Partners logo With text'),
+            'description'		=> __('A custom block for  Partners logo With text'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Partners logo With text.', ' Partners logo', 'logo'),
+        ));
+
+        acf_register_block(array(
+            'name'				=> 'text-with-blue-bg',
+            'title'				=> __('Text With Blue Background'),
+            'description'		=> __('A custom block for Text With Blue Background'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Text With Blue Background', 'Blue Background', 'text'),
+        ));
+        
+        acf_register_block(array(
+            'name'				=> 'three-col-text-with-icon',
+            'title'				=> __('Three Column Text With Icon'),
+            'description'		=> __('A custom block for Three Column Text With Icon'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'formatting',
+            'icon'				=> 'format-aside',
+            'keywords'			=> array('Three Column Text With Icon', 'Three Column Text', 'text'),
+        ));
+
+        
 
 
     }
