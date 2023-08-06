@@ -21,8 +21,8 @@ $fullwidth_image = get_field('fullwidth_image');
                         <?php if($column_one_pre_title != ''): ?>
                         <span class="pre-title"><?php echo $column_one_pre_title; ?></span>
                         <?php endif; ?>
-                        <?php if($column_one_pre_title != ''): ?>
-                        <h2 class="title"><?php echo $column_one_pre_title; ?></h2>
+                        <?php if($column_one_title != ''): ?>
+                        <h2 class="title"><?php echo $column_one_title; ?></h2>
                         <?php endif; ?>
 
                         <?php if($column_one_content != ''): ?>

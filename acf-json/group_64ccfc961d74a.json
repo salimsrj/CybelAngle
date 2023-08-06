@@ -1,9 +1,9 @@
 {
-    "key": "group_641b034f050ec",
-    "title": "Block: Related Resources",
+    "key": "group_64ccfc961d74a",
+    "title": "Partners logo wtih text",
     "fields": [
         {
-            "key": "field_64cbf800f5818",
+            "key": "field_64ccfde8aa735",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,14 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Related Resources",
+            "default_value": "Built on trust since 2013",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_64cbf81ff5819",
+            "key": "field_64ccfdfeaa736",
             "label": "Content",
             "name": "content",
             "type": "wysiwyg",
@@ -34,17 +34,17 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<p>The latest news, technologies, and resources from our team.<\/p>",
+            "default_value": "<p>We take pride in protecting a global network of 100’s of enterprise clients.<\/p>",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
         },
         {
-            "key": "field_64cbf9c7f581a",
-            "label": "Button",
-            "name": "button",
-            "type": "group",
+            "key": "field_64ccfe32aa737",
+            "label": "Partners logo",
+            "name": "partners_logo",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -53,13 +53,17 @@
                 "class": "",
                 "id": ""
             },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
             "layout": "block",
+            "button_label": "Add Logo",
             "sub_fields": [
                 {
-                    "key": "field_64cbf9e3f581b",
-                    "label": "Label",
-                    "name": "label",
-                    "type": "text",
+                    "key": "field_64ccfe69aa738",
+                    "label": "Logo",
+                    "name": "logo",
+                    "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -68,14 +72,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Read More",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
-                    "key": "field_64cbfa01f581c",
+                    "key": "field_64ccfe78aa739",
                     "label": "Url",
                     "name": "url",
                     "type": "text",
@@ -94,28 +103,6 @@
                     "maxlength": ""
                 }
             ]
-        },
-        {
-            "key": "field_64cc3c9589cca",
-            "label": "Resources",
-            "name": "resources",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "resource"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
         }
     ],
     "location": [
@@ -123,7 +110,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/releted-resources"
+                "value": "acf\/partners-logo"
             }
         ]
     ],
@@ -136,5 +123,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691107037
+    "modified": 1691156230
 }

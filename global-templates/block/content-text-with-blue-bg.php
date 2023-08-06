@@ -3,31 +3,44 @@
  * Block Name: Text with blue background.
  *
  */
-$block_header = get_field('block_header');
+$title = get_field('title');
+$content = get_field('content');
+$buttons = get_field('buttons');
+$image = get_field('image');
 ?>
 <section class="content-with-img-bluebg">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="content-box">
-                    <h2 class="title">Experience the CybelAngel Difference</h2>
+                    <?php if($title != ''): ?>
+                        <h2 class="title"><?php echo $title; ?></h2>
+                    <?php endif; ?>
+                    
                     <div class="content">
-                        <p>Our Data Breach Prevention and Asset Discovery and Monitoring solutions can defuse your supply chain attack risk.</p>
+                        <?php echo $content; ?>
                     </div>
                     
-
+                    <?php if($buttons): ?>
                     <div class="btn-container">
                         <ul>
-                            <li><a class="btn btn-white" href="#">Learn more</a></li>
-                            <li><a class="btn btn-sweet" href="#">Get Started</a></li>
+                            <?php if($buttons['button_one']['url']): ?>
+                            <li><a class="btn btn-white" href="<?php echo $buttons['button_one']['url']; ?>"><?php echo $buttons['button_one']['label']; ?></a></li>
+                            <?php endif; ?>
+                            <?php if($buttons['button_two']['url']): ?>
+                            <li><a class="btn btn-sweet" href="<?php echo $buttons['button_two']['url']; ?>"><?php echo $buttons['button_two']['label']; ?></a></li>
+                            <?php endif; ?>
                         </ul>
                     </div>
+                    <?php  endif; ?>
                 </div>
+                <?php if($image): ?>
                 <div class="image-box">
                     <div class="image-container">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Screenmockup.png" alt="">
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                     </div>
                 </div>
+                <?php endif;?>
             </div>
         </div>
     </div>

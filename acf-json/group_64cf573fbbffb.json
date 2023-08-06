@@ -1,9 +1,52 @@
 {
-    "key": "group_641b034f050ec",
-    "title": "Block: Related Resources",
+    "key": "group_64cf573fbbffb",
+    "title": "Block: Banner Without Image",
     "fields": [
         {
-            "key": "field_64cbf800f5818",
+            "key": "field_64cf5868f09e4",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_64cf57a1f09de",
+            "label": "Pre Title",
+            "name": "pre_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Join our exclusive global partner program network.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64cf5801f09df",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,14 +58,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Related Resources",
+            "default_value": "CybelAngel Partner Program",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_64cbf81ff5819",
+            "key": "field_64cf5810f09e0",
             "label": "Content",
             "name": "content",
             "type": "wysiwyg",
@@ -34,14 +77,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<p>The latest news, technologies, and resources from our team.<\/p>",
+            "default_value": "<p>We’re a small group of bright, motivated designers and developers all around the world. We’re growing fast and would love to meet you. Check out our open roles!<\/p>",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
         },
         {
-            "key": "field_64cbf9c7f581a",
+            "key": "field_64cf5822f09e1",
             "label": "Button",
             "name": "button",
             "type": "group",
@@ -56,7 +99,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_64cbf9e3f581b",
+                    "key": "field_64cf5849f09e2",
                     "label": "Label",
                     "name": "label",
                     "type": "text",
@@ -68,14 +111,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Read More",
+                    "default_value": "Apply To Join",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_64cbfa01f581c",
+                    "key": "field_64cf5858f09e3",
                     "label": "Url",
                     "name": "url",
                     "type": "text",
@@ -94,28 +137,6 @@
                     "maxlength": ""
                 }
             ]
-        },
-        {
-            "key": "field_64cc3c9589cca",
-            "label": "Resources",
-            "name": "resources",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "resource"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
         }
     ],
     "location": [
@@ -123,7 +144,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/releted-resources"
+                "value": "acf\/banner-without-image"
             }
         ]
     ],
@@ -136,5 +157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691107037
+    "modified": 1691310216
 }

@@ -1,9 +1,9 @@
 {
-    "key": "group_641b034f050ec",
-    "title": "Block: Related Resources",
+    "key": "group_64cf1b30a4759",
+    "title": "Block:  Text With Image Style One",
     "fields": [
         {
-            "key": "field_64cbf800f5818",
+            "key": "field_64cf1c349e1d3",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,14 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Related Resources",
+            "default_value": "M&A Cyber Due Diligence",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_64cbf81ff5819",
+            "key": "field_64cf1c589e1d4",
             "label": "Content",
             "name": "content",
             "type": "wysiwyg",
@@ -34,14 +34,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<p>The latest news, technologies, and resources from our team.<\/p>",
+            "default_value": "<p>Every business depends on relationships with third-party vendors, suppliers, distributors, exposing them to unknown risks. And when companies merge and integrate systems, the acquiring company will inevitably inherit those risks as well.  Don’t rely on self reporting and assumptions regarding a company’s security posture when CybelAngel can give you an accurate, real-time view before you make the deal. <\/p>\r\n <p>With CybelAngel’s M&A Cybersecurity Due Diligence Assessment, a team of experienced cybersecurity analysts conduct an in-depth review that provides insight into:<\/p>\r\n<ul>\r\n<li>Exposed intellectual property<\/li>\r\n<li>Cyber risks with potential to impact valuation and brand reputation<\/li>\r\n<li>Cyber risks tied to the technical integration<\/li>\r\n<li>Target company’s risks benchmarked against similar industry players<\/li>\r\n<\/ul>\r\n<p>A comprehensive list of mitigation recommendations<\/p>",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
         },
         {
-            "key": "field_64cbf9c7f581a",
+            "key": "field_64cf1ccd9e1d5",
             "label": "Button",
             "name": "button",
             "type": "group",
@@ -56,7 +56,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_64cbf9e3f581b",
+                    "key": "field_64cf1cdb9e1d6",
                     "label": "Label",
                     "name": "label",
                     "type": "text",
@@ -68,14 +68,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Read More",
+                    "default_value": "Learn more",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_64cbfa01f581c",
+                    "key": "field_64cf1d0e9e1d9",
                     "label": "Url",
                     "name": "url",
                     "type": "text",
@@ -96,10 +96,10 @@
             ]
         },
         {
-            "key": "field_64cc3c9589cca",
-            "label": "Resources",
-            "name": "resources",
-            "type": "post_object",
+            "key": "field_64cf1d86bcae5",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -108,14 +108,16 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "resource"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -123,7 +125,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/releted-resources"
+                "value": "acf\/text-with-image-style-one"
             }
         ]
     ],
@@ -136,5 +138,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691107037
+    "modified": 1691295138
 }

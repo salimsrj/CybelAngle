@@ -33,10 +33,10 @@ $buttons = get_field('buttons');
                         <?php if($buttons): ?>
                         <div class="btn-container">
                             <ul>
-                                <?php if($buttons['button_one']): ?>
+                                <?php if($buttons['button_one']['url']): ?>
                                 <li><a class="btn btn-white" href="<?php echo $buttons['button_one']['url']; ?>"><?php echo $buttons['button_one']['label']; ?></a></li>
                                 <?php endif; ?>
-                                <?php if($buttons['button_two']): ?>
+                                <?php if($buttons['button_two']['url']): ?>
                                 <li><a class="btn btn-pest" href="<?php echo $buttons['button_one']['url']; ?>"><?php echo $buttons['button_two']['label']; ?></a></li>
                                 <?php endif; ?>
                             </ul>

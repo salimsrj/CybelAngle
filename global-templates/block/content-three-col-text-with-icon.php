@@ -3,87 +3,73 @@
  * Block Name: Three Column Text With Icon.
  */
 $title = get_field('title');
+$column_one = get_field('column_one');
+$column_one_icon = $column_one['icon'];
+$column_one_title = $column_one['title'];
+$column_one_content = $column_one['content'];
+$column_one_link = $column_one['link'];
+
+$column_two = get_field('column_two');
+$column_two_contents = $column_two['contents'];
+
+// $column_three = get_field('column_three');
+// $column_three_contents = $column_three['contents'];
+
+
+
 ?>
 <section class="three-column-text-with-icon">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="flex-content-box">
+                    <?php if($column_one): ?>
                     <div class="left-col">
                         <div class="first-item">
                             <article>
+                                <?php if($column_one_icon): ?>
                                 <div class="icon">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-flash-2.png"
-                                        alt="icon-flash-2">
+                                    <img src="<?php echo $column_one_icon['url']; ?>"
+                                        alt="<?php echo $column_one_icon['alt']; ?>">
                                 </div>
-                                <h2 class="title">Supply Chain Attacks are prevented thanks to our robust and relentless
-                                    defense.</h2>
+                                <?php endif; ?>
+                                <?php if($column_one_title != ''): ?>
+                                <h2 class="title"><?php echo $column_one_title;  ?></h2>
+                                <?php endif; ?>
                                 <div class="content">
-                                    <p>Prevent supply chain attacks now:</p>
+                                    <?php echo $column_one_content; ?>
                                 </div>
-                                <a href="#" class="link">Try our 21 day Free Trial</a>
+                                <?php if($column_one_link['url'] != ''): ?>
+                                <a href="<?php echo $column_one_link['url']; ?>" class="link"><?php echo $column_one_link['label']; ?></a>
+                                <?php endif; ?>
                             </article>
                         </div>
                     </div>
+                    <?php endif; ?>
 
+                        
+
+                    <?php if($column_two_contents): ?>
                     <div class="right-col">
+                        <?php foreach($column_two_contents as $content): ?>
                         <div class="item">
                             <article>
                                 <div class="icon">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-chat-2.png"
-                                        alt="icon">
+                                    <img src="<?php echo $content['icon']['url']; ?>"
+                                        alt="<?php echo $content['icon']['alt']; ?>">
                                 </div>
-                                <h3 class="title">Dedicated Analyst</h3>
+                                <h3 class="title"><?php echo $content['title']; ?></h3>
                                 <div class="content">
-                                    <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the
-                                        same page and in the loop.</p>
+                                    <?php echo $content['content']; ?>
                                 </div>
-                                <a href="#" class="link">View integration</a>
+                                <?php if($content['link']['url'] != ''): ?>
+                                <a href="<?php echo $content['link']['url'] ; ?>" class="link"><?php echo $content['link']['label'] ; ?></a>
+                                <?php endif; ?>
                             </article>
                         </div>
-
-                        <div class="item">
-                            <article>
-                                <div class="icon">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-return.png"
-                                        alt="icon">
-                                </div>
-                                <h3 class="title">Pinpoint Exposure</h3>
-                                <div class="content">
-                                    <p>Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data.</p>
-                                </div>
-                                <a href="#" class="link">View integration</a>
-                            </article>
-                        </div>
-
-                        <div class="item">
-                            <article>
-                                <div class="icon">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-flash-3.png"
-                                        alt="icon">
-                                </div>
-                                <h3 class="title">Zero False-Positives</h3>
-                                <div class="content">
-                                    <p>An all-in-one customer service platform that helps you balance everything your customers need to be happy.</p>
-                                </div>
-                                <a href="#" class="link">View integration</a>
-                            </article>
-                        </div>
-
-                        <div class="item">
-                            <article>
-                                <div class="icon">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-smile.png"
-                                        alt="icon">
-                                </div>
-                                <h3 class="title">On-Request Takedowns</h3>
-                                <div class="content">
-                                    <p>Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email.</p>
-                                </div>
-                                <a href="#" class="link">View integration</a>
-                            </article>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

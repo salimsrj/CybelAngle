@@ -280,6 +280,86 @@ function my_acf_init() {
             'keywords'			=> array('Three Column Text With Icon', 'Three Column Text', 'text'),
         ));
 
+
+        acf_register_block(array(
+            'name'              => 'banner',
+            'title'             => __('Banner'),
+            'description'       => __('A custom block for Banner'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Banner'),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'featurs-with-img',
+            'title'             => __('Featurs with image'),
+            'description'       => __('A custom block for Featurs with image'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Featurs with image'),
+        ));
+
+
+         acf_register_block(array(
+            'name'              => 'two-column-text-box-with-blue-bg',
+            'title'             => __('Two Column Text With Blue Background'),
+            'description'       => __('A custom block for Two Column Text With Blue Background'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Two Column Text With Blue Background','Blue Background', 'Text'),
+        ));
+
+         acf_register_block(array(
+            'name'              => 'text-with-image-style-one',
+            'title'             => __('Text With Image Style One'),
+            'description'       => __('A custom block for Two Column Text With Image Style One'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Text With Image Style One', 'Text'),
+        ));
+
+         
+        acf_register_block(array(
+            'name'              => 'banner-without-image',
+            'title'             => __('Banner Without Image'),
+            'description'       => __('A custom block for Banner Without Image'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Banner Without Image', 'Banner'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'programs',
+            'title'             => __('Programs'),
+            'description'       => __('A custom block for Programs'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Programs', 'Program'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'contact-us',
+            'title'             => __('Contact'),
+            'description'       => __('A custom block for Contact'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Contact', 'Contact Us'),
+        ));
+
+         
+
+
+       
+
         
 
 
@@ -378,6 +458,61 @@ register_sidebar(
 
 
 }
+
+
+function cptui_register_my_cpts() {
+
+	/**
+	 * Post Type: Resources.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Resources", "understrap-child" ),
+		"singular_name" => esc_html__( "Resource", "understrap-child" ),
+		"menu_name" => esc_html__( "Resources", "understrap-child" ),
+		"all_items" => esc_html__( "All Resource", "understrap-child" ),
+		"add_new" => esc_html__( "Add New Resource", "understrap-child" ),
+		"add_new_item" => esc_html__( "Add New Resource", "understrap-child" ),
+		"edit_item" => esc_html__( "Edit Resource", "understrap-child" ),
+		"new_item" => esc_html__( "New Resource", "understrap-child" ),
+		"view_item" => esc_html__( "View Resource", "understrap-child" ),
+		"view_items" => esc_html__( "View Resources", "understrap-child" ),
+		"search_items" => esc_html__( "Search Resource", "understrap-child" ),
+		"not_found" => esc_html__( "Resource Found", "understrap-child" ),
+		"not_found_in_trash" => esc_html__( "No Resource found in trash", "understrap-child" ),
+	];
+
+	$args = [
+		"label" => esc_html__( "Resources", "understrap-child" ),
+		"labels" => $labels,
+		"description" => "Resource library",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => false,
+		"rewrite" => [ "slug" => "resource", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "resource", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );
+
 
 
     
