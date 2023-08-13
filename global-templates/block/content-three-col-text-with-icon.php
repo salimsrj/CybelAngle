@@ -4,6 +4,7 @@
  */
 $title = get_field('title');
 $column_one = get_field('column_one');
+$style = get_field('style');
 $column_one_icon = $column_one['icon'];
 $column_one_title = $column_one['title'];
 $column_one_content = $column_one['content'];
@@ -18,7 +19,7 @@ $column_two_contents = $column_two['contents'];
 
 
 ?>
-<section class="three-column-text-with-icon">
+<section class="<?php if($style == 'style_2'){ echo 'three-column-text-without-icon';} else {echo 'three-column-text-with-icon';} ?>">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -54,10 +55,13 @@ $column_two_contents = $column_two['contents'];
                         <?php foreach($column_two_contents as $content): ?>
                         <div class="item">
                             <article>
+                                <?php if($content['icon']['url'] != ''): ?>
                                 <div class="icon">
                                     <img src="<?php echo $content['icon']['url']; ?>"
                                         alt="<?php echo $content['icon']['alt']; ?>">
                                 </div>
+                                <?php endif; ?>
+                                
                                 <h3 class="title"><?php echo $content['title']; ?></h3>
                                 <div class="content">
                                     <?php echo $content['content']; ?>

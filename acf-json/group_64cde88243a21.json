@@ -17,7 +17,9 @@
             },
             "choices": {
                 "style_1": "Style One",
-                "style_2": "Style Two"
+                "style_2": "Style Two",
+                "style_3": "Style Three",
+                "style_4": "Style Four"
             },
             "default_value": false,
             "allow_null": 0,
@@ -78,6 +80,20 @@
                         "field": "field_64ce0db470591",
                         "operator": "==",
                         "value": "style_2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_64ce0db470591",
+                        "operator": "==",
+                        "value": "style_3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_64ce0db470591",
+                        "operator": "==",
+                        "value": "style_4"
                     }
                 ]
             ],
@@ -231,6 +247,33 @@
             ]
         },
         {
+            "key": "field_64d271caed118",
+            "label": "Sub Title",
+            "name": "sub_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64ce0db470591",
+                        "operator": "==",
+                        "value": "style_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Protect Your External Attack Surface in Four Easy Steps",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_64cde8ff5e8b5",
             "label": "Feature image",
             "name": "feature_image",
@@ -267,6 +310,13 @@
                         "field": "field_64ce0db470591",
                         "operator": "==",
                         "value": "style_2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_64ce0db470591",
+                        "operator": "==",
+                        "value": "style_4"
                     }
                 ]
             ],
@@ -336,5 +386,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691298942
+    "modified": 1691513561
 }

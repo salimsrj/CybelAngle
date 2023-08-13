@@ -24,9 +24,7 @@ $buttons = get_field('buttons');
                         <?php endif; ?>
                         <?php if($content != ''): ?>
                         <div class="content">
-                            <p>Your digital security is only as good as your partners’ digital security. Your IT
-                                vendors, manufacturers, suppliers, and service providers all pose some risk to your
-                                network.</p>
+                        <?php echo $content; ?>
                         </div>
                         <?php endif; ?>
 

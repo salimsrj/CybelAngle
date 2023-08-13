@@ -356,6 +356,139 @@ function my_acf_init() {
         ));
 
          
+ acf_register_block(array(
+            'name'              => 'two-col-text-and-image',
+            'title'             => __('Two column text and image'),
+            'description'       => __('A custom block for Two column text and image'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Contact', 'Contact Us'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'quotes',
+            'title'             => __('Quotes'),
+            'description'       => __('A custom block for quotese'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('quotes'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'offices',
+            'title'             => __('Offices'),
+            'description'       => __('A custom block for offices'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('offices', 'contact address'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'features-with-steps',
+            'title'             => __('Features with steps'),
+            'description'       => __('A custom block for Features'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Features', 'Features with steps'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'how-it-works',
+            'title'             => __('How it works'),
+            'description'       => __('A custom block for How it works'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('How it works'),
+        ));
+
+         
+         
+ acf_register_block(array(
+            'name'              => 'news',
+            'title'             => __('News'),
+            'description'       => __('A custom block for News'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('News'),
+        ));
+         
+ acf_register_block(array(
+            'name'              => 'blog',
+            'title'             => __('Blog'),
+            'description'       => __('A custom block for Blog'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Blog'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'our-team',
+            'title'             => __('Our Team'),
+            'description'       => __('A custom block for Our team'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Our Team'),
+        ));
+
+         
+ acf_register_block(array(
+            'name'              => 'banner-with-subscription',
+            'title'             => __('Banner with subscription'),
+            'description'       => __('A custom block for Banner with subscription'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Banner with subscription'),
+        ));
+
+          acf_register_block(array(
+            'name'              => 'quote-with-image',
+            'title'             => __('Quote with image'),
+            'description'       => __('A custom block forQuote with image'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Quote with image'),
+        ));
+
+
+           acf_register_block(array(
+            'name'              => 'inner-page-newsletter',
+            'title'             => __('Inner Page Newsletter'),
+            'description'       => __('A custom block for Inner Page Newsletter'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Inner Page Newsletter'),
+        ));
+
+
+           acf_register_block(array(
+            'name'              => 'jobs',
+            'title'             => __('Jobs'),
+            'description'       => __('A custom block for Jobs'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Jobs','Join Our Team', 'Carrer'),
+        ));
+
+
+
+         
 
 
        
@@ -460,7 +593,7 @@ register_sidebar(
 }
 
 
-function cptui_register_my_cpts() {
+function cptui_register_my_cpts_Resources() {
 
 	/**
 	 * Post Type: Resources.
@@ -511,7 +644,194 @@ function cptui_register_my_cpts() {
 	register_post_type( "resource", $args );
 }
 
-add_action( 'init', 'cptui_register_my_cpts' );
+add_action( 'init', 'cptui_register_my_cpts_Resources' );
+
+
+function cptui_register_my_cpts_news() {
+
+	/**
+	 * Post Type: News.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "News", "understrap-child" ),
+		"singular_name" => esc_html__( "News", "understrap-child" ),
+		"menu_name" => esc_html__( "News", "understrap-child" ),
+		"all_items" => esc_html__( "All News", "understrap-child" ),
+		"add_new" => esc_html__( "Add New News", "understrap-child" ),
+		"add_new_item" => esc_html__( "Add New News", "understrap-child" ),
+		"edit_item" => esc_html__( "Edit News", "understrap-child" ),
+		"new_item" => esc_html__( "New News", "understrap-child" ),
+		"view_item" => esc_html__( "View News", "understrap-child" ),
+		"view_items" => esc_html__( "View News", "understrap-child" ),
+		"search_items" => esc_html__( "Search News", "understrap-child" ),
+		"not_found" => esc_html__( "No News Found", "understrap-child" ),
+		"not_found_in_trash" => esc_html__( "No News found in trash", "understrap-child" ),
+	];
+
+	$args = [
+		"label" => esc_html__( "News", "understrap-child" ),
+		"labels" => $labels,
+		"description" => "News",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => true,
+		"can_export" => false,
+		"rewrite" => [ "slug" => "news", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title", "editor", "thumbnail", "page-attributes" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "news", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_news' );
+
+function cptui_register_my_taxes_news() {
+
+	/**
+	 * Taxonomy: News categories.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "News categories", "understrap-child" ),
+		"singular_name" => esc_html__( "News Category", "understrap-child" ),
+	];
+
+	
+	$args = [
+		"label" => esc_html__( "News categories", "understrap-child" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => false,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'news-category', 'with_front' => true, ],
+		"show_admin_column" => false,
+		"show_in_rest" => true,
+		"show_tagcloud" => false,
+		"rest_base" => "news-category",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"rest_namespace" => "wp/v2",
+		"show_in_quick_edit" => false,
+		"sort" => false,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "news-category", [ "news" ], $args );
+}
+add_action( 'init', 'cptui_register_my_taxes_news' );
+
+
+function cptui_register_my_cpts_careers() {
+
+    /**
+     * Post Type: Careers.
+     */
+
+    $labels = [
+        "name" => __( "Careers", "twentytwentyone" ),
+        "singular_name" => __( "Career", "twentytwentyone" ),
+        "menu_name" => __( "Careers", "twentytwentyone" ),
+        "all_items" => __( "All Career", "twentytwentyone" ),
+        "add_new" => __( "New Career", "twentytwentyone" ),
+        "add_new_item" => __( "Add New Career", "twentytwentyone" ),
+        "edit_item" => __( "Edit Career", "twentytwentyone" ),
+        "new_item" => __( "New Career", "twentytwentyone" ),
+        "view_item" => __( "View Career", "twentytwentyone" ),
+        "view_items" => __( "View Careers", "twentytwentyone" ),
+        "search_items" => __( "Search Career", "twentytwentyone" ),
+        "not_found" => __( "Careers Not found", "twentytwentyone" ),
+        "not_found_in_trash" => __( "No Career Found in Trash", "twentytwentyone" ),
+    ];
+
+    $args = [
+        "label" => __( "Careers", "twentytwentyone" ),
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "rest_namespace" => "wp/v2",
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "delete_with_user" => false,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => true,
+        "can_export" => false,
+        "rewrite" => [ "slug" => "careers", "with_front" => true ],
+        "query_var" => true,
+        "menu_icon" => "dashicons-welcome-learn-more",
+        "supports" => [ "title", "editor", "thumbnail", "page-attributes" ],
+        "show_in_graphql" => false,
+    ];
+
+    register_post_type( "careers", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_careers' );
+
+
+
+function cptui_register_my_taxes_job_category() {
+
+    /**
+     * Taxonomy: Job Categories.
+     */
+
+    $labels = [
+        "name" => __( "Job Categories", "twentytwentyone" ),
+        "singular_name" => __( " Job Category", "twentytwentyone" ),
+    ];
+
+    
+    $args = [
+        "label" => __( "Job Categories", "twentytwentyone" ),
+        "labels" => $labels,
+        "public" => true,
+        "publicly_queryable" => true,
+        "hierarchical" => true,
+        "show_ui" => true,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "query_var" => true,
+        "rewrite" => [ 'slug' => 'job_category', 'with_front' => true, ],
+        "show_admin_column" => false,
+        "show_in_rest" => true,
+        "show_tagcloud" => false,
+        "rest_base" => "job_category",
+        "rest_controller_class" => "WP_REST_Terms_Controller",
+        "rest_namespace" => "wp/v2",
+        "show_in_quick_edit" => false,
+        "sort" => false,
+        "show_in_graphql" => false,
+    ];
+    register_taxonomy( "job_category", [ "careers" ], $args );
+}
+add_action( 'init', 'cptui_register_my_taxes_job_category' );
+
+
 
 
 

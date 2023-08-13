@@ -28,6 +28,20 @@ $button = get_field('button');
                     <?php if($button['url'] != ''): ?>
                     <a href="<?php echo $button['url']; ?>" class="btn btn-green"><?php echo $button['label']; ?></a>
                     <?php endif; ?>
+
+                        <div class="buttons-container">
+                            <ul>
+                                <?php if($button['button_one']['url'] != ''): ?>
+                                <li><a href="<?php echo $button['button_one']['url']; ?>" class="btn btn-white"><?php echo $button['button_one']['label']; ?></a></li>
+                                <?php endif; ?>
+                                <?php if($button['button_two']['url'] != ''): ?>
+                                <li><a href="<?php echo $button['button_two']['url']; ?>" class="btn btn-pest"><?php echo $button['button_two']['label']; ?></a></li>
+                                <?php endif; ?>
+                            </ul>
+                        </div>
+
+
+                    
                 </div>
             </div>
         </div>

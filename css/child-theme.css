@@ -17050,6 +17050,17 @@ body section.testimonial-style2 .testimonal-carousel .item .image-box {
     order: 1;
   }
 }
+body section.testimonial-style2 .swiper-pagination {
+  position: absolute;
+  text-align: left;
+  padding: 15px 30px;
+}
+body section.testimonial-style2 .swiper-pagination .swiper-pagination-bullet {
+  opacity: 0.5;
+}
+body section.testimonial-style2 .swiper-pagination .swiper-pagination-bullet-active {
+  color: #ffffff;
+}
 body section.releted-resources {
   padding: 100px 0;
 }
@@ -18435,6 +18446,18 @@ body section.featurs-with-img-style-2 .service-list ul li a.link {
   font-size: 16px;
   line-height: 24px;
   color: #DA366F;
+  position: relative;
+}
+body section.featurs-with-img-style-2 .service-list ul li a.link::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  background: url(../images/arrow-right.png);
+  display: inline-block;
+  background-size: cover;
+  top: 10%;
+  position: absolute;
+  right: -30px;
 }
 body section.text-block-blue-bg {
   padding: 100px 0;

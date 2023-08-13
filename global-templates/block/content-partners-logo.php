@@ -3,16 +3,13 @@
  * Template Name: Partners logo wtih text.
  */
 
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-get_header();
-
 $title = get_field('title');
 $content = get_field('content');
 $partners_logo = get_field('partners_logo');
 
 ?>
-<section class="partners-logo" style="background:url(<?php echo get_stylesheet_directory_uri(); ?>/images/bg-2.png);">
+<section class="partners-logo" style="background:url(<?php echo get_stylesheet_directory_uri(); ?>/images/bg-2.jpg); background-size: cover;
+    background-position: center;">
     <div class="container">
         <div class="row">
             <div class="col-12">

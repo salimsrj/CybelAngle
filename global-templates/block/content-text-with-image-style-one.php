@@ -7,10 +7,11 @@ $title = get_field('title');
 $content = get_field('content');
 $button = get_field('button');
 $image = get_field('image');
+$design = get_field('design');
 
 
 ?>
-<section class="text-with-img">
+<section class="text-with-img" style="background-color: <?php echo $design['background_color']; ?>; padding-top: <?php echo $design['padding_top']; ?>px;  padding-bottom: <?php echo $design['padding_bottom']; ?>px;">
     <div class="container">
     <div class="row">
             <div class="col-12">

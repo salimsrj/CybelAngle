@@ -1350,6 +1350,17 @@
                         }
                     }
                 }
+                .swiper-pagination {
+                    position: absolute;
+                    text-align: left;
+                    padding: 15px 30px;
+                    .swiper-pagination-bullet {
+                        opacity: .5;
+                    }
+                    .swiper-pagination-bullet-active {
+                        color: #ffffff;
+                    }
+                }
             }
             section.releted-resources {
                 padding: 100px 0;
@@ -2641,6 +2652,18 @@
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #DA366F;
+                                position: relative;
+                                &::after {
+                                    content: "";
+                                    width: 20px;
+                                    height: 15px;
+                                    background: url(../images/arrow-right.png);
+                                    display: inline-block;
+                                    background-size: cover;
+                                    top: 10%;
+                                    position: absolute;
+                                    right: -30px;
+                                }
                             }
                         }
                     }

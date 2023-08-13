@@ -1,33 +1,9 @@
 {
-    "key": "group_64cf573fbbffb",
-    "title": "Block: Banner Without Image",
+    "key": "group_64d65cd03716d",
+    "title": "Block: Our team",
     "fields": [
         {
-            "key": "field_64cf5868f09e4",
-            "label": "Background Image",
-            "name": "background_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_64cf57a1f09de",
+            "key": "field_64d65d9582601",
             "label": "Pre Title",
             "name": "pre_title",
             "type": "text",
@@ -39,14 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Join our exclusive global partner program network.",
+            "default_value": "Our team",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_64cf5801f09df",
+            "key": "field_64d65e0b82602",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -58,14 +34,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "CybelAngel Partner Program",
+            "default_value": "Leadership team",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_64cf5810f09e0",
+            "key": "field_64d65e4b82603",
             "label": "Content",
             "name": "content",
             "type": "wysiwyg",
@@ -77,16 +53,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<p>We’re a small group of bright, motivated designers and developers all around the world. We’re growing fast and would love to meet you. Check out our open roles!<\/p>",
+            "default_value": "<p>We’re a cross-disciplinary team that loves to create great experiences for our customers.<\/p>",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
         },
         {
-            "key": "field_64cf5822f09e1",
+            "key": "field_64d65e9b82604",
             "label": "Buttons",
-            "name": "button",
+            "name": "buttons",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -99,45 +75,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_64cf5849f09e2",
-                    "label": "Label",
-                    "name": "label",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Apply To Join",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_64cf5858f09e3",
-                    "label": "Url",
-                    "name": "url",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "#",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_64d53e812e9ba",
+                    "key": "field_64d65eaf82605",
                     "label": "Button One",
                     "name": "button_one",
                     "type": "group",
@@ -152,7 +90,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_64d53ea62e9bb",
+                            "key": "field_64d65ebf82606",
                             "label": "Label",
                             "name": "label",
                             "type": "text",
@@ -164,14 +102,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "About Us",
+                            "default_value": "About us",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
                         },
                         {
-                            "key": "field_64d53edd2e9bc",
+                            "key": "field_64d65edb82607",
                             "label": "Url",
                             "name": "url",
                             "type": "text",
@@ -192,7 +130,7 @@
                     ]
                 },
                 {
-                    "key": "field_64d53f2e7355c",
+                    "key": "field_64d65f02e20bf",
                     "label": "Button Two",
                     "name": "button_two",
                     "type": "group",
@@ -207,7 +145,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_64d53f2e7355d",
+                            "key": "field_64d65f02e20c0",
                             "label": "Label",
                             "name": "label",
                             "type": "text",
@@ -219,14 +157,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Open Positions",
+                            "default_value": "About us",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
                         },
                         {
-                            "key": "field_64d53f2e7355e",
+                            "key": "field_64d65f02e20c1",
                             "label": "Url",
                             "name": "url",
                             "type": "text",
@@ -247,6 +185,108 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_64d663c31e502",
+            "label": "Team Members",
+            "name": "team_members",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_64d6773b1e503",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_64d677d81e505",
+                    "label": "Designation",
+                    "name": "designation",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_64d677fb1e506",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_64d678161e507",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -254,7 +294,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/banner-without-image"
+                "value": "acf\/our-team"
             }
         ]
     ],
@@ -267,5 +307,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691893742
+    "modified": 1691804664
 }

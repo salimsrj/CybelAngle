@@ -9424,6 +9424,9 @@
 	  navigation: {
 	    nextEl: ".button-next",
 	    prevEl: ".button-prev"
+	  },
+	  pagination: {
+	    el: ".swiper-pagination"
 	  }
 	});
 

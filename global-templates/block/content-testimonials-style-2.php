@@ -86,6 +86,7 @@ $testimonials = get_field('testimonials');
 
                         
                     </div>
+                    <div class="swiper-pagination"></div>
 
                 </div>
                 <?php endif; ?>
