@@ -113,7 +113,10 @@ var swiper2 = new Swiper(".testimonial-list", {
     navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",
-    }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
 });
 
 var swiper3 = new Swiper(".testimonal-carousel", {
@@ -122,6 +125,9 @@ var swiper3 = new Swiper(".testimonal-carousel", {
     loop: true,
     slidesPerView: 1,
     centeredSlides: false,
+    pagination: {
+        el: ".swiper-pagination",
+      },
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
@@ -130,8 +136,5 @@ var swiper3 = new Swiper(".testimonal-carousel", {
     navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-    },
+    }
 });

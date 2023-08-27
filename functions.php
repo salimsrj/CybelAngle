@@ -15,12 +15,19 @@ defined( 'ABSPATH' ) || exit;
  */
 function understrap_remove_scripts() {
 	wp_enqueue_style( 'swiper', get_stylesheet_directory_uri() .'/lib/swiper/swiper-bundle.min.css' );
+	//wp_enqueue_style( 'KBmapmarkers', get_stylesheet_directory_uri() .'/lib/swiper/KBmapmarkers.css' );
+	wp_enqueue_style( 'interactive-image', get_stylesheet_directory_uri() .'/lib/interactive/interactive-image.css' );
 	wp_dequeue_style( 'understrap-styles' );
 	wp_deregister_style( 'understrap-styles' );
 
 	wp_enqueue_script( 'swiper', get_stylesheet_directory_uri() . '/lib/swiper/swiper-bundle.min.js' );
+	
+	wp_dequeue_script( 'jQuery' );
 	wp_dequeue_script( 'understrap-scripts' );
 	wp_deregister_script( 'understrap-scripts' );
+    wp_enqueue_script( 'interactive-image', get_stylesheet_directory_uri() . '/lib/interactive/interactive-image.js', array('jquery'));
+    //wp_enqueue_script( 'KBmapmarkers', get_stylesheet_directory_uri() . '/lib/map/js/KBmapmarkers.js', array('jquery'));
+	//wp_enqueue_script( 'KBmapmarkersCustm', get_stylesheet_directory_uri() . '/lib/map/js/KBmapmarkersCords.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
@@ -486,6 +493,16 @@ function my_acf_init() {
             'keywords'          => array('Jobs','Join Our Team', 'Carrer'),
         ));
 
+        acf_register_block(array(
+            'name'              => 'video-with-text',
+            'title'             => __('Vide with text'),
+            'description'       => __('A custom block for Vide with text'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-aside',
+            'keywords'          => array('Vide with text'),
+        ));
+
 
 
          
@@ -831,6 +848,46 @@ function cptui_register_my_taxes_job_category() {
 }
 add_action( 'init', 'cptui_register_my_taxes_job_category' );
 
+
+function get_ajax_resource_data() {
+    $args = array(
+        'post_type' => array('resource'),
+        'post_status' => array('publish'),
+        'posts_per_page' => 10,
+        'order' => 'DESC',
+        'orderby' => 'date',
+    );
+
+    // $ajaxposts = get_posts( $args );
+    // // $postList = [];
+    // // $i= 0;
+    // // foreach($ajaxposts as $post){
+    // //     $postList[$i]['id'] = $post->ID;
+    // //     $postList[$i]['title'] = $post->post_title;
+    // //     $postList[$i]['content'] = $post->post_content;
+    // //     $postList[$i]['date'] = $post->post_date;
+    // //     $postList[$i]['url'] = get_the_permalink($post->ID);
+    // //     $postList[$i]['image'] = get_the_post_thumbnail_url($post->ID, 'full'); ;
+    // //     $i++;
+    // // }
+    // //print_r($ajaxposts );
+    // echo json_encode( $ajaxposts );
+
+    $the_query = new WP_Query($args);
+
+    if( $the_query->have_posts() ) :
+        while( $the_query->have_posts() ): $the_query->the_post(); ?>
+            <h2><a href="<?php echo esc_url( post_permalink() ); ?>"><?php the_title();?></a></h2>
+        <?php endwhile;
+        wp_reset_postdata();  
+    endif;
+
+    die();
+
+}
+
+add_action('wp_ajax_get_ajax_resource_data', 'get_ajax_resource_data');
+add_action('wp_ajax_nopriv_get_ajax_resource_data', 'get_ajax_resource_data');
 
 
 

@@ -84,7 +84,7 @@ get_header();
                     </div>
 
                     <div class="right-content-box">
-                        <div class="resources">
+                        <div class="resources" id="resource_items">
 
                             <div class="item">
                                 <article>
@@ -316,7 +316,25 @@ get_header();
 </section>
 
 
-
+<script>
+jQuery( document ).ready(function() {
+    jQuery.ajax({
+    type: 'POST',
+    url: '<?php echo admin_url('admin-ajax.php');?>',
+    dataType: "json",
+    data: { action : 'get_ajax_resource_data' },
+    success: function( response ) {
+        alert();
+        jQuery('#resource_items').empty();
+        jQuery('#resource_items').html( data );
+       //console.log(response);
+        // jQuery.each( response, function( key, value ) {
+        //     console.log( key, value ); 
+        // } );
+    }
+});
+});
+</script>
 
 
 
