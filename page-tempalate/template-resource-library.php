@@ -64,11 +64,20 @@ get_header();
                         </div>
                         <div class="widget">
                             <div class="left-menu">
+                                <?php
+                                $terms = get_terms( array(
+                                    'taxonomy'   => 'resource-categories',
+                                    'hide_empty' => false,
+                                ) );
+                                //print_r($terms);
+                                ?>
                                 <ul>
                                     <li>Resource Topics
                                         <ul>
                                             <li><a href="#">View all</a></li>
-                                            <li><a href="#">Shadow IT</a></li>
+                                            <?php foreach($terms as $category): ?>
+                                            <li><a class="cat-list_item" href="#" data-slug="<?php echo  $category->slug; ?>"><?php echo  $category->name; ?></a></li>
+                                            <?php endforeach; ?>
                                             <li><a href="#">Third Party Risk</a></li>
                                             <li><a href="#">Exposed Data</a></li>
                                             <li><a href="#">Dark Web</a></li>
@@ -86,28 +95,9 @@ get_header();
                     <div class="right-content-box">
                         <div class="resources" id="resource_items">
 
-                            <div class="item">
-                                <article>
-                                    <div class="image-container" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/resource-img.jpg); background-size: cover;
-        background-position: center;">
-                                        <div class="post-meta">
-                                            <div class="left-box">
-                                                <span>1 min Read</span>
-                                                <span class="date">Jan 01, 2023</span>
-                                            </div>
 
-                                            <div class="right-box">
-                                                <span>Shadow IT</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="title">Healthcare Data Actively Targeted and Sold on the Dark Web</h3>
-                                    <p>How do you create compelling presentations that wow your colleagues and impress
-                                        your
-                                        managers?</p>
-                                    <a href="#" class="link">Read post</a>
-                                </article>
-                            </div>
+
+                        
 
                             <div class="item">
                                 <article>
@@ -132,13 +122,11 @@ get_header();
                                 </article>
                             </div>
 
-
                             <div class="item">
                                 <article>
                                     <div class="image-container" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/resource-img.jpg); background-size: cover;
-                                background-position: center;">
+        background-position: center;">
                                         <div class="post-meta">
-
                                             <div class="left-box">
                                                 <span>1 min Read</span>
                                                 <span class="date">Jan 01, 2023</span>
@@ -147,7 +135,6 @@ get_header();
                                             <div class="right-box">
                                                 <span>Shadow IT</span>
                                             </div>
-
                                         </div>
                                     </div>
                                     <h3 class="title">Healthcare Data Actively Targeted and Sold on the Dark Web</h3>
@@ -210,6 +197,7 @@ get_header();
                                 </article>
                             </div>
 
+
                             <div class="item">
                                 <article>
                                     <div class="image-container" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/resource-img.jpg); background-size: cover;
@@ -233,6 +221,35 @@ get_header();
                                         managers?</p>
                                     <a href="#" class="link">Read post</a>
                                 </article>
+                            </div>
+
+                            <div class="item">
+                                <article>
+                                    <div class="image-container" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/resource-img.jpg); background-size: cover;
+                                background-position: center;">
+                                        <div class="post-meta">
+
+                                            <div class="left-box">
+                                                <span>1 min Read</span>
+                                                <span class="date">Jan 01, 2023</span>
+                                            </div>
+
+                                            <div class="right-box">
+                                                <span>Shadow IT</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <h3 class="title">Healthcare Data Actively Targeted and Sold on the Dark Web</h3>
+                                    <p>How do you create compelling presentations that wow your colleagues and impress
+                                        your
+                                        managers?</p>
+                                    <a href="#" class="link">Read post</a>
+                                </article>
+                            </div>
+
+                            <div class="filter-resource">
+
                             </div>
 
 
@@ -333,6 +350,27 @@ jQuery( document ).ready(function() {
         // } );
     }
 });
+});
+
+
+
+jQuery('.cat-list_item').on('click', function(e) {
+    e.preventDefault()
+    jQuery('.cat-list_item').removeClass('active');
+    jQuery(this).addClass('active');
+
+    jQuery.ajax({
+    type: 'POST',
+    url: '/wp-admin/admin-ajax.php',
+    dataType: 'html',
+    data: {
+      action: 'filter_resource',
+      category: jQuery(this).data('slug'),
+    },
+    success: function(res) {
+        jQuery('.filter-resource').html(res);
+    }
+  })
 });
 </script>
 

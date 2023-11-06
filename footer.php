@@ -164,7 +164,21 @@ $footerText = $footer_logo_and_text['text'];
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
+<script>
+	// jQuery('.mega-menu-item').hover(function(){
+	// 	jQuery('.menu-dropdown', this).toggleClass('show');
+	// });
 
+	jQuery('.mega-menu-item').click(function(){
+		jQuery('.menu-dropdown', this).toggleClass('show');
+	});
+	new PureCounter();
+
+	// counterUp(document.querySelector('.counter') {
+	// 	duration: 1000,
+	// 	delay: 16
+	// });
+</script>
 </body>
 
 </html>

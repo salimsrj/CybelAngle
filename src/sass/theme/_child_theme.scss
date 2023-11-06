@@ -1,5 +1,9 @@
         body {
-            font-family: 'Inter', sans-serif;
+            // font-family: 'Inter', sans-serif;
+            font-family: 'Lexend Deca', sans-serif;
+            // h1, h2, h3{
+            //     color: $heading-color;
+            // }
 
             a.navbar-brand {
                 max-width: 280px;
@@ -29,7 +33,7 @@
             }
 
             header#wrapper-navbar {
-                box-shadow: 0px 15px 24px 0px rgba(0, 0, 0, 0.25);
+               // box-shadow: 0px 15px 24px 0px rgba(0, 0, 0, 0.25);
                 z-index: 99999;
                 position: relative;
             }
@@ -68,7 +72,7 @@
 
             .btn.btn-white {
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 300;
                 font-size: 16px;
                 line-height: 24px;
                 color: $theme-black;
@@ -84,7 +88,7 @@
 
             .btn.btn-pink {
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 300;
                 font-size: 16px;
                 line-height: 24px;
                 color: $white;
@@ -121,6 +125,7 @@
                             color: $white;
                             font-size: 14px;
                             line-height: 16px;
+                            font-weight: 300;
 
                             @include mobile {
                                 padding: 10px;
@@ -135,10 +140,11 @@
                 li {
                     a.nav-link {
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 16px;
                         color: $theme-black;
+                        height: 100%;
 
                         @include mobile {
                             color: $white;
@@ -166,7 +172,7 @@
 
                             a.dropdown-item {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: $theme-black;
@@ -248,10 +254,13 @@
                 .content-box {
                     position: relative;
                     z-index: 9;
-                    max-width: 600px;
+                    max-width: 800px;
                     min-height: 500px;
                     display: flex;
                     align-items: center;
+                    margin: 0 auto;
+                    justify-content: center;
+                    text-align: center;
 
                     @include mobile {
                         // background: rgba(255, 255, 255, .5);
@@ -259,10 +268,11 @@
                     }
 
                     h1.title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 54px;
                         line-height: 64px;
                         margin-bottom: 20px;
+                        color: $gray-black;
 
                         @include mobile {
                             font-size: 30px;
@@ -272,11 +282,12 @@
                     }
 
                     .content {
-                        font-weight: 500;
-                        font-size: 18px;
-                        line-height: 28px;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
                         margin-bottom: 40px;
-                        max-width: 480px;
+                       // max-width: 480px;
+                        color: $gray-p;
                     }
                 }
 
@@ -303,7 +314,7 @@
                                 border: 1px solid #D0D5DD;
                                 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                 border-radius: 8px;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: #344054;
@@ -324,7 +335,7 @@
                                 border: 1px solid $pest;
                                 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                 border-radius: 8px;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: $white;
@@ -336,6 +347,31 @@
                                     margin-right: 0;
                                 }
                             }
+
+
+                            a.btn.btn-pink {
+                                padding: 16px 28px;
+                                border-radius: 8px;
+                                font-weight: 00;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: $white;
+                                display: inline-block;
+
+                                border-radius: 8px;
+                                border: 1px solid #E8396A;
+                                background: #E8396A;
+
+                                /* Shadow/xs */
+                                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+                                @include mobile {
+                                    display: block;
+                                    padding: 10px 20px;
+                                    margin-right: 0;
+                                }
+                            }
+
                         }
                     }
                 }
@@ -356,7 +392,7 @@
 
                     .content {
                         max-width: 220px;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 22px;
                         color: $white;
@@ -403,16 +439,18 @@
                     max-width: 768px;
                     margin: 0 auto;
                     text-align: center;
-                    font-weight: 500;
+                    font-weight: 300;
                     font-size: 18px;
                     line-height: 28px;
                     margin-bottom: 50px;
+                    color: $gray-p;
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 40px;
                         line-height: 56px;
                         margin-bottom: 20px;
+                        color: $theme-black;
 
                         @include mobile {
                             font-size: 30px;
@@ -427,18 +465,22 @@
                 }
 
                 .nav-link {
-                    max-width: 370px;
+                    max-width: 33.3%;
                     text-align: center;
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 16px;
                     line-height: 24px;
                     color: $gray;
                     border: none;
                     border-radius: 0;
-                    border-top: 3px solid $white;
+                    border-top: 3px solid #f2f4f7;
+                    padding: 35px 15px;
 
                     &.active {
+                        background-color: transparent;
+                        border-color: transparent;
                         border-top: 3px solid $sweet;
+
 
                         h3 {
                             color: $sweet;
@@ -447,7 +489,7 @@
 
                     h3 {
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                     }
@@ -470,7 +512,7 @@
                     padding: 30px 0;
                 }
 
-                font-family: $font-family_1;
+                //font-family: $font-family_1;
 
                 @include mobile {
                     .content-box {
@@ -480,7 +522,7 @@
 
                 h2.title {
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 200;
                     font-size: 36px;
                     line-height: 44px;
                     letter-spacing: -0.02em;
@@ -494,7 +536,7 @@
 
                 .content {
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 30px;
                     color: $gray;
@@ -540,10 +582,10 @@
 
                                 .number-text {
                                     font-style: normal;
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     font-size: 48px;
                                     line-height: 60px;
-                                    letter-spacing: -0.02em;
+                                    letter-spacing: -0.96px;
                                     color: $color_3;
 
                                     @include mobile {
@@ -553,7 +595,7 @@
                                 }
 
                                 .content {
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     font-size: 18px;
                                     line-height: 28px;
                                     color: $gray;
@@ -574,7 +616,7 @@
                 border: 1px solid $sweet;
                 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                 border-radius: 8px;
-                font-weight: 600;
+                font-weight: 300;
                 font-size: 16px;
                 line-height: 24px;
                 color: $white;
@@ -586,6 +628,27 @@
                     background: #ffffff;
                 }
             }
+
+
+            .btn-gold {
+                background: $yellow;
+                border: 1px solid $yellow;
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 8px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                color: $theme-black;
+                padding: 12px 20px;
+
+                &:hover {
+                    border: 1px solid $yellow;
+                    color: $color_3;
+                    background: #ffffff;
+                }
+            }
+
+
 
             section.text-with-img-and-list {
                 padding: 50px 0;
@@ -605,7 +668,7 @@
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 40px;
                         line-height: 56px;
                         text-align: center;
@@ -621,7 +684,7 @@
                     .content {
                         max-width: 700px;
                         margin: 0 auto;
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 18px;
                         line-height: 28px;
                         text-align: center;
@@ -637,7 +700,7 @@
 
                         li {
                             font-style: normal;
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 14px;
                             line-height: 22px;
                             color: rgba(7, 16, 25, 0.75);
@@ -654,10 +717,10 @@
 
                             h3 {
                                 font-style: normal;
-                                font-weight: 700;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
-                                color: #4E9398;
+                                color: $sweet;
                             }
                         }
                     }
@@ -667,16 +730,20 @@
             section.cta {
                 padding: 80px 60px;
                 color: #EAECF0;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
 
                 @include mobile {
                     padding: 40px 30px;
                 }
 
                 h2.title {
-                    font-weight: 600;
+                    font-weight: 200;
                     font-size: 36px;
                     line-height: 44px;
-                    letter-spacing: -0.02em;
+                    letter-spacing: -0.72px;
                     color: $white;
                     margin-bottom: 30px;
 
@@ -703,13 +770,13 @@
                 margin-bottom: 30px;
 
                 article {
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 16px;
                     line-height: 24px;
                     color: #667085;
 
                     h3.title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 24px;
                         line-height: 32px;
                         color: #344054;
@@ -734,13 +801,14 @@
                         border-radius: 8px;
                         overflow: hidden;
                         margin-bottom: 30px;
+                        max-height: 240px;
                     }
 
                     .post-meta {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #004EEB;
+                        color: $sweet;
                         margin-bottom: 15px;
                     }
                 }
@@ -777,10 +845,10 @@
 
                         .item {
                             h3 {
-                                font-weight: 500;
+                                font-weight: 300;
                                 font-size: 48px;
                                 line-height: 60px;
-                                letter-spacing: -0.02em;
+                                letter-spacing: -0.96px;
                                 color: $heading-color;
                                 margin-bottom: 35px;
 
@@ -791,13 +859,13 @@
                             }
 
                             .auther-info {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #475467;
 
                                 h4.name {
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     font-size: 18px;
                                     line-height: 28px;
                                     color: $heading-color;
@@ -873,12 +941,14 @@
                     text-align: center;
 
                     h2.section-title {
-                        font-weight: 600;
-                        font-size: 40px;
-                        line-height: 56px;
+                        font-weight: 200;
+                        font-size: 36px;
+                        line-height: 42px;
                         text-align: center;
                         color: $theme-black;
-                        margin-bottom: 20px;
+                        letter-spacing: -0.72px;
+                        max-width: 500px;
+                        margin: 0 auto 20px;
 
                         @include mobile {
                             font-size: 30px;
@@ -887,7 +957,7 @@
                     }
 
                     .content {
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 18px;
                         line-height: 28px;
                         text-align: center;
@@ -925,11 +995,12 @@
                             max-width: 540px;
 
                             h2.title {
-                                font-weight: 600;
-                                font-size: 40px;
-                                line-height: 56px;
+                                font-weight: 200;
+                                font-size: 36px;
+                                line-height: 44px;
                                 color: $theme-black;
                                 margin-bottom: 25px;
+                                letter-spacing: -0.72px;
 
                                 @include mobile {
                                     font-size: 30px;
@@ -939,7 +1010,7 @@
 
                             .btn.btn-white {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: $theme-black;
@@ -955,7 +1026,7 @@
 
                         .content {
                             font-style: normal;
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 20px;
                             line-height: 32px;
                             margin-bottom: 40px;
@@ -992,17 +1063,17 @@
 
                 .section-head {
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 30px;
                     color: $gray;
                     margin-bottom: 50px;
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
-                        letter-spacing: -0.02em;
+                        letter-spacing: -0.72px;
                         color: $heading-color;
                     }
                 }
@@ -1047,13 +1118,15 @@
                         overflow: hidden;
 
                         .content-box {
-                            background-color: rgba(255, 255, 255, .3);
-                            border: 1px solid rgba(255, 255, 255, 0.5);
-                            font-weight: 500;
+                            background-color: rgba(255, 255, 255, .30);
+                            border: 1px solid rgba(255, 255, 255, .50);
+                            font-weight: 300;
                             font-size: 24px;
                             line-height: 32px;
                             color: $white;
                             padding: 20px;
+                            backdrop-filter: blur(12px);
+                           // font-family: 'Inter', sans-serif;
 
                             span.item-footer {
                                 font-size: 18px;
@@ -1099,12 +1172,14 @@
             }
 
             section.home-contact-us {
-                min-height: 1100px;
-                padding: 50px 0;
+                //min-height: 1100px;
+                padding: 100px 0;
 
                 @include mobile {
                     background: none !important;
                     padding-top: 0;
+                    padding: 50px 0;
+
                 }
 
                 .contact-form {
@@ -1114,35 +1189,46 @@
                         padding-right: 0;
                         padding: 30px;
                     }
+                    .gform_heading{
+                        color: #ffffff;
+                        text-align: center;
+                    }
 
                     h2.gform_title {
-                        font-weight: 600;
-                        font-size: 40px;
-                        line-height: 56px;
-                        background: linear-gradient(90.36deg, #A32B77 5.74%, #7115AC 40.67%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-                        text-fill-color: transparent;
-                        margin-bottom: 15px;
+                        font-weight: 200;
+                        font-size: 36px;
+                        font-style: normal;
+                        line-height: 44px;
+                        /* 122.222% */
+                        letter-spacing: -0.72px;
+                        // background: linear-gradient(90.36deg, #A32B77 5.74%, #7115AC 40.67%);
+                        // -webkit-background-clip: text;
+                        // -webkit-text-fill-color: transparent;
+                        // background-clip: text;
+                        // text-fill-color: transparent;
+                        color: #ffffff;
+                        margin-bottom: 20px;
+                        text-align: center;
                     }
 
                     span.gform_description {
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
-                        color: #475467;
+                        //color: #475467;
+                        color: #ffffff;
                         margin-bottom: 40px;
                         display: block;
                     }
 
                     label.gfield_label {
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #344054;
+                        //color: #344054;
+                        color: #ffffff;
                     }
 
                     .ginput_container.ginput_container_text input {
@@ -1160,18 +1246,18 @@
                     }
 
                     .gfield_html_formatted {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 12px;
                         line-height: 22px;
-                        color: #667085;
+                        color: #ffffff;
                     }
 
                     label.gfield_label {
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 12px;
                         line-height: 22px;
-                        color: #667085;
+                        color: #ffffff;
                     }
 
                     .gform_footer .gform_button {
@@ -1179,7 +1265,7 @@
                         border: 2px solid $sweet;
                         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                         border-radius: 8px;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 24px;
                         color: $white;
@@ -1223,14 +1309,21 @@
                     }
                 }
 
+
                 span.pre-header {
-                    background: #EAF4F4;
+                    background: #FDF5F8;
                     mix-blend-mode: multiply;
                     border-radius: 16px;
                     padding: 4px 16px;
                     display: inline-block;
                     margin-bottom: 25px;
-                    color: #529096;
+
+                    color: #E8396A;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 20px;
+                    /* 142.857% */
 
                     @include mobile {
                         font-size: 12px;
@@ -1253,9 +1346,10 @@
                     }
 
                     h1.title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 54px;
                         line-height: 64px;
+                        letter-spacing: -1.08px;
                         margin-bottom: 20px;
 
                         @include mobile {
@@ -1265,11 +1359,12 @@
                     }
 
                     .content {
-                        font-weight: 500;
-                        font-size: 18px;
-                        line-height: 28px;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 30px;
                         margin-bottom: 40px;
                         max-width: 520px;
+                        color: $gray;
                     }
                 }
 
@@ -1292,7 +1387,7 @@
                                 border: 1px solid #D0D5DD;
                                 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                 border-radius: 8px;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: #344054;
@@ -1312,7 +1407,26 @@
                                 border: 1px solid $pest;
                                 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                 border-radius: 8px;
-                                font-weight: 600;
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: $white;
+                                display: inline-block;
+
+                                @include mobile {
+                                    font-size: 12px;
+                                    line-height: 22px;
+                                    padding: 10px 15px;
+                                }
+                            }
+
+                            a.btn.btn-pink {
+                                padding: 16px 28px;
+                                background: $sweet;
+                                border: 1px solid $sweet;
+                                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                border-radius: 8px;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: $white;
@@ -1348,7 +1462,7 @@
 
                     .left-box {
                         width: calc(50% - 25px);
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -1360,19 +1474,19 @@
                         }
 
                         span.pre-title {
-                            font-weight: 600;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
-                            color: $pest;
+                            color: $sweet;
                             display: block;
                             margin-bottom: 10px;
                         }
 
                         h2.title {
-                            font-weight: 600;
+                            font-weight: 200;
                             font-size: 36px;
                             line-height: 44px;
-                            letter-spacing: -0.02em;
+                            letter-spacing: -0.72px;
                             color: $heading-color;
                             margin-bottom: 20px;
 
@@ -1380,6 +1494,10 @@
                                 font-size: 30px;
                                 line-height: 40px;
                             }
+                        }
+
+                        .content {
+                           // font-family: $font-family_Inter;
                         }
                     }
 
@@ -1412,13 +1530,14 @@
                                     .content {
                                         width: calc(100% - 70px);
                                         font-style: normal;
-                                        font-weight: 400;
+                                        font-weight: 300;
                                         font-size: 16px;
                                         line-height: 24px;
                                         color: #475467;
 
+
                                         h3 {
-                                            font-weight: 600;
+                                            font-weight: 300;
                                             font-size: 20px;
                                             line-height: 30px;
                                             color: $heading-color;
@@ -1453,7 +1572,7 @@
 
                     .first-item {
                         article {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 18px;
                             line-height: 28px;
                             color: #475467;
@@ -1465,7 +1584,7 @@
 
                             h2.title {
                                 font-style: normal;
-                                font-weight: 500;
+                                font-weight: 200;
                                 font-size: 36px;
                                 line-height: 41px;
                                 letter-spacing: -0.02em;
@@ -1480,7 +1599,7 @@
 
                             a.link {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #DA366F;
@@ -1521,7 +1640,7 @@
                             }
 
                             h3.title {
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 20px;
                                 line-height: 30px;
                                 color: $heading-color;
@@ -1529,14 +1648,14 @@
 
                             .content {
                                 margin-bottom: 20px;
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #475467;
                             }
 
                             a.link {
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: $sweet;
@@ -1601,11 +1720,12 @@
                             }
 
                             h3 {
-                                font-weight: 500;
+                                font-weight: 300;
                                 font-size: 36px;
                                 line-height: 44px;
                                 letter-spacing: -0.02em;
                                 margin-bottom: 60px;
+                                color: $white;
 
                                 @include mobile {
                                     font-size: 20px;
@@ -1615,7 +1735,7 @@
                             }
 
                             .auther-info {
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 18px;
                                 line-height: 28px;
 
@@ -1625,7 +1745,7 @@
                                 }
 
                                 .info {
-                                    font-weight: 400;
+                                    font-weight: 300;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: #E9D7FE;
@@ -1684,7 +1804,7 @@
                     padding-bottom: 30px;
 
                     h2.section-title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -1697,14 +1817,14 @@
                     }
 
                     .content-box {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 24px;
                     }
 
                     .left-box {
                         width: 70%;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -1715,11 +1835,11 @@
                     }
 
                     .right-box {
-                        width: 33.3%;
+                        width: 30%;
                         display: flex;
                         justify-content: end;
                         align-items: flex-start;
-                        justify-content: space-between;
+                        // justify-content: space-between;
 
                         @include mobile {
                             width: 100%;
@@ -1756,26 +1876,26 @@
                                 justify-content: space-between;
                                 color: $white;
                                 border-top: 1px solid $white;
-                                font-weight: 600;
+                                font-weight: 300;
 
                                 span {
                                     display: block;
 
                                     &.date {
-                                        font-weight: 400;
+                                        font-weight: 300;
                                     }
                                 }
                             }
                         }
 
                         article {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                             color: #475467;
 
                             a.link {
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #da376f;
@@ -1794,7 +1914,155 @@
                         }
 
                         h3.title {
-                            font-weight: 600;
+                            font-weight: 300;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: $heading-color;
+                            margin-bottom: 15px;
+
+                            @include mobile {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            section.up-coming-webinars {
+                padding: 100px 0 50px;
+
+                @include mobile {
+                    padding: 30px 0;
+                }
+
+            }
+
+            section.webinars {
+                padding: 50px 0 100px;
+
+                @include mobile {
+                    padding: 30px 0;
+                }
+
+                .section-head {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-bottom: 30px;
+
+                    h2.section-title {
+                        font-weight: 300;
+                        font-size: 36px;
+                        line-height: 44px;
+                        letter-spacing: -0.72px;
+                        color: $heading-color;
+
+                        @include mobile {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                    }
+
+                    .content-box {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .left-box {
+                        width: 70%;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #475467;
+
+                        @include mobile {
+                            width: 100%;
+                        }
+                    }
+
+                    .right-box {
+                        width: 33.3%;
+                        display: flex;
+                        justify-content: end;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        @include mobile {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+
+                .resources {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    // justify-content: space-between;
+
+                    .item {
+                        width: calc(33% - 18px);
+
+                        @include mobile {
+                            width: 100%;
+                        }
+
+                        .image-container {
+                            height: 280px;
+                            display: flex;
+                            align-items: flex-end;
+                            margin-bottom: 30px;
+                            border-radius: 8px;
+
+                            .post-meta {
+                                background: rgba(255, 255, 255, .5);
+                                width: 100%;
+                                padding: 20px;
+                                display: flex;
+                                justify-content: space-between;
+                                color: $white;
+                                border-top: 1px solid $white;
+                                font-weight: 400;
+
+                                span {
+                                    display: block;
+
+                                    &.date {
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+
+                        article {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #475467;
+
+                            a.link {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #da376f;
+                                display: inline-block;
+                                margin-top: 10px;
+
+                                &::after {
+                                    content: '';
+                                    height: 10px;
+                                    width: 10px;
+                                    background: url('../images/arrow-top.png');
+                                    display: inline-block;
+                                    margin-left: 12px;
+                                }
+                            }
+                        }
+
+                        h3.title {
+                            font-weight: 300;
                             font-size: 24px;
                             line-height: 32px;
                             color: $heading-color;
@@ -1814,7 +2082,7 @@
                     color: $white;
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 24px;
                         line-height: 32px;
                         text-align: center;
@@ -1843,7 +2111,7 @@
                     color: $white;
                     max-width: 768px;
                     margin: 0 auto;
-                    font-weight: 400;
+                    font-weight: 300;
                     margin-bottom: 65px;
 
                     h2.title {
@@ -1852,7 +2120,7 @@
                         text-align: center;
                         letter-spacing: -0.02em;
                         color: $white;
-                        font-weight: 600;
+                        font-weight: 200;
                         margin-bottom: 30px;
 
                         @include mobile {
@@ -1862,7 +2130,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #D0D5DD;
@@ -1917,17 +2185,34 @@
                     color: $white;
 
                     .pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
                         color: #EAECF0;
                         display: block;
                         margin-bottom: 15px;
+                        //font-size: $font-family_Inter;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
+                        font-size: 48px;
+                        line-height: 60px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        color: $white;
+                        margin-bottom: 25px;
+
+                        @include mobile {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                    }
+
+
+                    h1.title {
+                        font-weight: 300;
                         font-size: 48px;
                         line-height: 60px;
                         text-align: center;
@@ -1942,7 +2227,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #EAECF0;
@@ -1950,15 +2235,16 @@
                     }
 
                     a.btn.btn-green {
-                        background: $pest;
-                        border: 1px solid $pest;
+                        background: $yellow;
+                        border: 1px solid $yellow;
                         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                         border-radius: 8px;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 24px;
-                        color: $white;
+                        color: #1A194F;
                         padding: 12px 20px;
+                        //font-family: $font-family_Inter;
                     }
 
                     .buttons-container {
@@ -1980,15 +2266,18 @@
                                     border: 1px solid #D0D5DD;
                                     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                     border-radius: 8px;
+                                   // font-family: $font-family_Inter;
                                 }
 
                                 a.btn.btn-pest {
-                                    background: $pest;
-                                    border: 1px solid $pest;
+                                    background: $yellow;
+                                    border: 1px solid $yellow;
                                     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                     border-radius: 8px;
                                     padding: 12px 20px;
-                                    color: $white;
+                                    color: #1A194F;
+                                    //font-family: $font-family_Inter;
+
                                 }
                             }
                         }
@@ -2005,8 +2294,13 @@
                     text-align: center;
                     margin-bottom: 75px;
 
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #475467;
+
                     h2.section-title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -2018,6 +2312,8 @@
                             line-height: 30px;
                         }
                     }
+
+
                 }
 
                 .program-posts {
@@ -2068,7 +2364,7 @@
                             }
 
                             h3.title {
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 30px;
                                 line-height: 38px;
                                 color: $heading-color;
@@ -2077,14 +2373,19 @@
 
                             .title-content {
                                 max-width: 510px;
+
+                                h3.title {
+                                    font-weight: 300;
+                                }
                             }
 
                             .content {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: #475467;
                             }
+
                         }
 
                         .image-box {
@@ -2108,18 +2409,19 @@
                 gap: 64px;
                 //width: 1440px;
                 min-height: 332px;
-                background: #1A194F;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                color: $white;
+                background: #F9FAFB;
+                //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #344054;
 
                 .left-content-box {
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 30px;
-                    color: #EFEFEF;
+                    color: #344054;
 
                     span.pre-title {
-                        background: $sweet;
+                        //background: $sweet;
+                        background: $yellow;
                         mix-blend-mode: normal;
                         border: 1px solid #000000;
                         border-radius: 16px;
@@ -2128,10 +2430,21 @@
                         margin-bottom: 15px;
                         font-size: 16px;
                         line-height: 24px;
+                        color: #1A194F;
+                    }
+
+                    h1.title {
+                        color: #101828;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 60px;
+                        /* 125% */
+                        letter-spacing: -0.96px;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 48px;
                         line-height: 60px;
                         letter-spacing: -0.02em;
@@ -2153,10 +2466,10 @@
 
                     .content {
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
-                        color: rgba(239, 239, 239, 0.6);
+                        color: #344054;
                         max-width: 500px;
                     }
                 }
@@ -2190,7 +2503,7 @@
                                     display: block;
 
                                     a {
-                                        font-weight: 600;
+                                        font-weight: 300;
                                         font-size: 16px;
                                         line-height: 24px;
                                         color: #667085;
@@ -2237,26 +2550,26 @@
                                         justify-content: space-between;
                                         color: $white;
                                         border-top: 1px solid $white;
-                                        font-weight: 600;
+                                        font-weight: 400;
 
                                         span {
                                             display: block;
 
                                             &.date {
-                                                font-weight: 400;
+                                                font-weight: 300;
                                             }
                                         }
                                     }
                                 }
 
                                 article {
-                                    font-weight: 400;
+                                    font-weight: 300;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: #475467;
 
                                     a.link {
-                                        font-weight: 600;
+                                        font-weight: 300;
                                         font-size: 16px;
                                         line-height: 24px;
                                         color: #da376f;
@@ -2275,7 +2588,7 @@
                                 }
 
                                 h3.title {
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     font-size: 24px;
                                     line-height: 32px;
                                     color: $heading-color;
@@ -2319,16 +2632,16 @@
                     }
 
                     h2.gform_title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 40px;
                         line-height: 56px;
                         color: $heading-color;
                         margin-bottom: 15px;
                     }
 
-                    span.gform_description {
+                    .gform_description {
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -2338,7 +2651,7 @@
 
                     label.gfield_label {
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
                         color: #344054;
@@ -2355,7 +2668,7 @@
                         &::-webkit-input-placeholder {
                             /* Edge */
                             color: #667085;
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                         }
@@ -2363,14 +2676,14 @@
                         &:-ms-input-placeholder {
                             /* Internet Explorer 10-11 */
                             color: #667085;
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                         }
 
                         &::placeholder {
                             color: #667085;
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                         }
@@ -2384,31 +2697,38 @@
                     }
 
                     .gfield_html_formatted {
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 22px;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
                         color: #667085;
                     }
 
                     label.gfield_label {
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 12px;
                         line-height: 22px;
                         color: #667085;
                     }
 
                     .gform_footer .gform_button {
-                        background: #155EEF;
-                        border: 2px solid #155EEF;
+                        background: $sweet;
+                        border: 2px solid $sweet;
                         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                         border-radius: 8px;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         color: $white;
                         padding: 10px;
                         width: 100%;
+                        //font-family: $font-Inter;
+
+                        &:hover {
+                            background: $yellow;
+                            border: 2px solid $yellow;
+                            color: $theme-black;
+                        }
                     }
 
                     .gfield--width-half:nth-child(odd) {
@@ -2444,7 +2764,7 @@
                     }
 
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
@@ -2454,7 +2774,7 @@
 
                     h2.section-title {
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 48px;
                         line-height: 60px;
                         text-align: center;
@@ -2484,7 +2804,7 @@
                         }
 
                         article {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                             color: #475467;
@@ -2497,7 +2817,7 @@
 
                             .post-meta {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #004EEB;
@@ -2506,7 +2826,7 @@
 
                             h3.title {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 24px;
                                 line-height: 32px;
                                 color: $heading-color;
@@ -2544,7 +2864,7 @@
                                 background: rgba(163, 42, 118, 0.1);
                                 mix-blend-mode: multiply;
                                 border-radius: 16px;
-                                font-weight: 500;
+                                font-weight: 300;
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #A32A76;
@@ -2555,10 +2875,147 @@
                 }
             }
 
+
+
+            section.customer {
+                padding: 50px 0;
+                background-color: $silver;
+
+                .section-head {
+                    text-align: center;
+                    margin-bottom: 100px;
+
+                    @include mobile {
+                        margin-bottom: 50px;
+                    }
+
+                    span.pre-title {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #1D2939;
+                        margin-bottom: 10px;
+                    }
+
+                    h2.section-title {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 48px;
+                        line-height: 60px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        color: #000000;
+                        margin-bottom: 46px;
+
+                        @include mobile {
+                            font-size: 30px;
+                            line-height: 40px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .customer-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+
+                    .item {
+                        width: calc(33.3% - 20px);
+                        padding: 10px 0;
+
+                        @include mobile {
+                            width: 100%;
+                        }
+
+                        article {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #475467;
+
+                            .image-container {
+                                margin-bottom: 30px;
+                                border-radius: 8px;
+                                overflow: hidden;
+                            }
+
+                            .post-meta {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #004EEB;
+                                margin-bottom: 10px;
+                            }
+
+                            h3.title {
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 24px;
+                                line-height: 32px;
+                                color: $heading-color;
+                                position: relative;
+                                padding-right: 10px;
+                                margin-bottom: 20px;
+
+                                // &::after {
+                                //     content: '';
+                                //     width: 10px;
+                                //     height: 10px;
+                                //     display: inline-block;
+                                //     background: url('../images/read-more.png');
+                                //     background-size: cover;
+                                //     position: absolute;
+                                //     top: 10px;
+                                //     right: 0;
+                                // }
+                            }
+
+                            .tags {
+                                ul {
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+
+                            a.link {
+                                color: #E8396A;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 24px;
+                                display: inline-block;
+                                position: relative;
+
+                                &::after {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    background: url('../images/arrow-up-right-sweet.png');
+                                    background-size: cover;
+                                    position: absolute;
+                                    top: 5px;
+                                    right: 25;
+                                    content: '';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             section.blog-banner {
-                background: #1A194F;
+               
+                background: #F9FAFB;
                 padding: 50px 0 150px;
-                color: $white;
+                color: #1A194F;
 
                 .banner-content {
                     max-width: 550px;
@@ -2566,20 +3023,22 @@
                     text-align: center;
 
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
-                        color: #EAECF0;
+                        color: #344054;
+                        //font-family: $font-family_Inter;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 48px;
                         line-height: 60px;
                         text-align: center;
                         letter-spacing: -0.02em;
                         margin-bottom: 20px;
+                        color: #1A194F;
 
                         @include mobile {
                             font-size: 30px;
@@ -2588,11 +3047,11 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
-                        color: #EAECF0;
+                        color: #344054;
                         margin-bottom: 35px;
 
                         @include mobile {
@@ -2602,11 +3061,11 @@
                     }
 
                     span.notes {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
                         text-align: center;
-                        color: #EAECF0;
+                        color: #1A194F;
                         display: block;
                         padding: 8px;
 
@@ -2616,7 +3075,7 @@
 
                         a {
                             text-decoration: underline;
-                            color: #EAECF0;
+                            color: #1A194F;
                         }
                     }
 
@@ -2651,14 +3110,15 @@
                     input.form-control {
                         min-height: 44px;
                         border-radius: 8px;
+                        border-radius: 50px;
                     }
 
                     button.btn.btn-newsletter {
-                        background: $sweet;
-                        border: 1px solid #C61551;
-                        border-radius: 8px;
+                        background-image: linear-gradient(to right, #e9396a 15%, #3b79e1 100%) !important;
+                        //border: 1px solid $yellow;
+                        border-radius: 50px;
                         padding: 10px 24px;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
                         color: $white;
@@ -2681,17 +3141,18 @@
                     }
 
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
                         color: #1D2939;
                         margin-bottom: 10px;
+                        //font-family: $font-Inter;
                     }
 
                     h2.section-title {
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 48px;
                         line-height: 60px;
                         text-align: center;
@@ -2715,15 +3176,16 @@
 
                         .post-meta {
                             font-style: normal;
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 14px;
                             line-height: 20px;
-                            color: #004EEB;
+                            color: $sweet;
                             margin-bottom: 5px;
+                            //font-family: $font-Inter;
                         }
 
                         h2.title {
-                            font-weight: 600;
+                            font-weight: 200;
                             font-size: 30px;
                             line-height: 38px;
                             color: $heading-color;
@@ -2731,7 +3193,7 @@
                         }
 
                         .content {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                             color: #475467;
@@ -2753,7 +3215,7 @@
                                         background: rgba(163, 42, 118, 0.1);
                                         mix-blend-mode: multiply;
                                         border-radius: 16px;
-                                        font-weight: 500;
+                                        font-weight: 300;
                                         font-size: 14px;
                                         line-height: 20px;
                                         color: #A32A76;
@@ -2793,7 +3255,7 @@
                         }
 
                         article {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                             color: #475467;
@@ -2806,16 +3268,17 @@
 
                             .post-meta {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 200;
                                 font-size: 14px;
                                 line-height: 20px;
-                                color: #004EEB;
+                                color: $sweet;
                                 margin-bottom: 10px;
+                                //font-family: $font-Inter;
                             }
 
                             h3.title {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 24px;
                                 line-height: 32px;
                                 color: $heading-color;
@@ -2850,7 +3313,7 @@
                                             background: rgba(163, 42, 118, 0.1);
                                             mix-blend-mode: multiply;
                                             border-radius: 16px;
-                                            font-weight: 500;
+                                            font-weight: 300;
                                             font-size: 14px;
                                             line-height: 20px;
                                             color: #A32A76;
@@ -2883,15 +3346,15 @@
 
                 .banner-content {
                     color: #EAECF0;
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 30px;
 
                     h1.title {
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 60px;
                         line-height: 72px;
-                        letter-spacing: -0.02em;
+                        letter-spacing: 0;
                         color: $white;
                         margin-bottom: 25px;
 
@@ -2924,11 +3387,12 @@
 
                                 a.btn.btn-white {
                                     background-color: $white;
-                                    font-weight: 600;
+                                    font-weight: 400;
                                     font-size: 18px;
                                     line-height: 28px;
                                     color: #344054;
                                     padding: 16px 25px;
+                                   // font-family: $font-family_Inter;
 
                                     @include mobile {
                                         margin-bottom: 15px;
@@ -2937,15 +3401,16 @@
                                 }
 
                                 a.btn.btn-pest {
-                                    background-color: $pest;
-                                    border: 1px solid $pest;
+                                    background-color: $yellow;
+                                    border: 1px solid $yellow;
                                     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                                     border-radius: 8px;
-                                    font-weight: 600;
+                                    font-weight: 400;
                                     font-size: 18px;
                                     line-height: 28px;
                                     padding: 16px 25px;
-                                    color: $white;
+                                    color: #1A194F;
+                                    //font-family: $font-family_Inter;
 
                                     @include mobile {
                                         margin-bottom: 15px;
@@ -2953,6 +3418,36 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                &.banner-style-3 {
+                    text-align: center;
+                    padding-top: 96px;
+                    @include mobile{
+                        padding-top: 50px;
+                    }
+                    .banner-content {
+                        .pre-header {
+                            color: $yellow;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 20px;
+                            border-radius: 16px;
+                            background: #FDF5F8;
+                            padding: 4px 16px;
+                            display: inline-block;
+                            margin-bottom: 16px;
+                          }
+                        h1.title{
+                            max-width: 800px;
+                            margin: 0 auto 30px;
+                        }
+                        .content{
+                            margin: 0 auto;
+                            margin-bottom: 48px;
+                            
                         }
                     }
                 }
@@ -2968,7 +3463,7 @@
 
                 .section-head {
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 24px;
                         color: #DA366F;
@@ -2977,7 +3472,7 @@
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -3041,13 +3536,13 @@
                                     }
 
                                     h3 {
-                                        font-weight: 600;
+                                        font-weight: 400;
                                         font-size: 20px;
                                         line-height: 30px;
                                         color: $heading-color;
                                     }
 
-                                    font-weight: 400;
+                                    font-weight: 300;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: #475467;
@@ -3080,7 +3575,7 @@
                     padding-bottom: 64px;
 
                     span.pre-title {
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
                         color: #DA366F;
@@ -3090,10 +3585,11 @@
                         border-radius: 16px;
                         padding: 4px 12px;
                         margin-bottom: 15px;
+                        //font-family: $font-family_Inter;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         text-align: center;
@@ -3108,7 +3604,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
@@ -3122,11 +3618,11 @@
                     }
 
                     a.btn.btn-pest {
-                        background: $pest;
-                        border: 1px solid $pest;
+                        background: $sweet;
+                        border: 1px solid $sweet;
                         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                         border-radius: 8px;
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 18px;
                         line-height: 28px;
                         color: $white;
@@ -3147,7 +3643,10 @@
                 }
 
                 .service-list {
-                    padding-top: 65px;
+                    padding-top: 95px;
+                    @include mobile{
+                        padding-top: 50px;
+                    }
 
                     ul {
                         list-style: none;
@@ -3172,7 +3671,7 @@
                             }
 
                             .content {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 text-align: center;
@@ -3180,16 +3679,16 @@
                                 margin-bottom: 20px;
 
                                 h3 {
-                                    font-weight: 600;
-                                    font-size: 20px;
-                                    line-height: 30px;
+                                    font-weight: 300;
+                                    font-size: 26px;
+                                    line-height: 36px;
                                     text-align: center;
                                     color: $heading-color;
                                 }
                             }
 
                             a.link {
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #DA366F;
@@ -3234,7 +3733,7 @@
                         }
 
                         h3.title {
-                            font-weight: 600;
+                            font-weight: 300;
                             font-size: 36px;
                             line-height: 44px;
                             letter-spacing: -0.02em;
@@ -3249,25 +3748,27 @@
 
                         .content {
                             font-style: normal;
-                            font-weight: 300;
+                            font-weight: 200;
                             font-size: 20px;
                             line-height: 30px;
-                            color: #E9D7FE;
+                            color: $white;
                             margin-bottom: 25px;
                         }
 
                         a.btn.btn-pest {
-                            background: $pest;
-                            border: 1px solid $pest;
+                            background: $yellow;
+                            border: 1px solid $yellow;
                             box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                             border-radius: 8px;
                             font-style: normal;
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 18px;
                             line-height: 28px;
                             color: $white;
                             padding: 15px 30px;
                             margin-bottom: 15px;
+                            //font-size: $font-family_Inter;
+                            color: #1A194F;
                         }
                     }
 
@@ -3291,14 +3792,14 @@
                                     margin-bottom: 30px;
 
                                     .content {
-                                        font-weight: 300;
+                                        font-weight: 200;
                                         font-size: 16px;
                                         line-height: 24px;
-                                        color: #E9D7FE;
+                                        color: $white;
 
                                         h4 {
                                             font-style: normal;
-                                            font-weight: 600;
+                                            font-weight: 300;
                                             font-size: 20px;
                                             line-height: 30px;
                                             color: $white;
@@ -3347,7 +3848,7 @@
                             }
 
                             h3.title {
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 30px;
                                 line-height: 38px;
                                 color: $heading-color;
@@ -3359,7 +3860,7 @@
                             }
 
                             .content {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: #475467;
@@ -3396,7 +3897,7 @@
                     padding-bottom: 64px;
 
                     span.pre-title {
-                        font-weight: 500;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
                         color: #DA366F;
@@ -3406,10 +3907,11 @@
                         border-radius: 16px;
                         padding: 4px 12px;
                         margin-bottom: 15px;
+                        //font-family: $font-family_Inter;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         text-align: center;
@@ -3424,7 +3926,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
@@ -3433,15 +3935,16 @@
                     }
 
                     a.btn.btn-pest {
-                        background: $pest;
-                        border: 1px solid $pest;
+                        background: $yellow;
+                        border: 1px solid $yellow;
                         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
                         border-radius: 8px;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 18px;
                         line-height: 28px;
                         color: $white;
                         padding: 15px 28px;
+                        color: $theme-black;
 
                         &:hover {
                             background-color: $white;
@@ -3483,7 +3986,7 @@
                             }
 
                             .content {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 text-align: center;
@@ -3491,7 +3994,7 @@
                                 margin-bottom: 20px;
 
                                 h3 {
-                                    font-weight: 600;
+                                    font-weight: 400;
                                     font-size: 20px;
                                     line-height: 30px;
                                     text-align: center;
@@ -3500,7 +4003,7 @@
                             }
 
                             a.link {
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #DA366F;
@@ -3539,16 +4042,17 @@
                     }
 
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         color: #DA366F;
                         display: block;
                         margin-bottom: 10px;
+                        //font-family: $font-family_Inter;
                     }
 
                     h2.section-title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -3557,7 +4061,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -3614,13 +4118,13 @@
                                 border-radius: 8px;
                                 max-width: calc(100% - 48px);
                                 margin: 0 auto;
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: $white;
 
                                 h3.name {
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     font-size: 30px;
                                     line-height: 38px;
                                     color: $white;
@@ -3632,14 +4136,14 @@
                                 }
 
                                 span.designation {
-                                    font-weight: 600;
+                                    font-weight: 300;
                                     font-size: 18px;
                                     line-height: 28px;
                                     color: $white;
                                 }
 
                                 .content {
-                                    font-weight: 400;
+                                    font-weight: 300;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: $white;
@@ -3693,7 +4197,7 @@
 
                     .first-item {
                         article {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 18px;
                             line-height: 28px;
                             color: #475467;
@@ -3705,7 +4209,7 @@
 
                             h2.title {
                                 font-style: normal;
-                                font-weight: 500;
+                                font-weight: 200;
                                 font-size: 36px;
                                 line-height: 41px;
                                 letter-spacing: -0.02em;
@@ -3715,7 +4219,7 @@
 
                             a.link {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #DA366F;
@@ -3750,7 +4254,7 @@
                             }
 
                             h3.title {
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 20px;
                                 line-height: 30px;
                                 color: $heading-color;
@@ -3758,7 +4262,7 @@
 
                             .content {
                                 margin-bottom: 20px;
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #475467;
@@ -3778,14 +4282,15 @@
                 .section-content {
                     span.pre-title {
                         display: block;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         color: #DA366F;
+                        //font-family: $font-family_Inter;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -3793,7 +4298,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -3817,15 +4322,16 @@
                         }
 
                         span.category {
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 14px;
                             line-height: 20px;
                             color: #DA366F;
                             margin-bottom: 5px;
+                           // font-family: $font-family_Inter;
                         }
 
                         h3.title {
-                            font-weight: 500;
+                            font-weight: 300;
                             font-size: 18px;
                             line-height: 28px;
                             color: $heading-color;
@@ -3833,7 +4339,7 @@
                         }
 
                         .content {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 16px;
                             line-height: 24px;
                             color: #475467;
@@ -3847,7 +4353,7 @@
                                 li {
                                     display: inline-block;
                                     margin-right: 20px;
-                                    font-weight: 500;
+                                    font-weight: 300;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: #475467;
@@ -3870,7 +4376,7 @@
                         }
 
                         a.link {
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 16px;
                             line-height: 24px;
                             color: $sweet;
@@ -3912,22 +4418,22 @@
                     width: 100%;
 
                     .pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
-                        color: #4C9498;
+                        color: $sweet;
                         display: block;
                         margin-bottom: 10px;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 48px;
                         line-height: 60px;
                         text-align: center;
                         letter-spacing: -0.02em;
-                        color: $silver;
+                        color: #1A194F;
                         margin-bottom: 20px;
 
                         @include mobile {
@@ -3937,17 +4443,17 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
-                        color: #98A2B3;
+                        color: #344054;
                     }
                 }
 
                 .address {
                     width: 100%;
-                    color: $white;
+                    color: #1A194F;
                     display: flex;
                     flex-wrap: wrap;
 
@@ -3975,7 +4481,7 @@
                         }
 
                         h3 {
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 20px;
                             line-height: 30px;
                             color: $silver;
@@ -3983,7 +4489,7 @@
                         }
 
                         a.link {
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 16px;
                             line-height: 24px;
                             text-align: center;
@@ -4001,7 +4507,7 @@
                     margin-bottom: 30px;
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -4015,7 +4521,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -4058,7 +4564,7 @@
 
                     span.notes,
                     a {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 14px;
                         line-height: 20px;
                         color: #475467;
@@ -4078,7 +4584,7 @@
                         border: 1px solid #C61551;
                         border-radius: 8px;
                         padding: 10px 24px;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 14px;
                         line-height: 20px;
                         color: $white;
@@ -4098,7 +4604,7 @@
 
                 .content-box {
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -4116,16 +4622,16 @@
                     max-width: 560px;
 
                     span.sub-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
-                        color: $pest;
+                        color: $sweet;
                         display: block;
                         margin-bottom: 10px;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -4142,7 +4648,7 @@
 
             section.quotes {
                 padding: 96px 0;
-                background: $silver;
+                //background: $silver;
 
                 @include mobile {
                     padding: 30px 0;
@@ -4153,7 +4659,7 @@
                         margin: 0 auto 50px;
                         max-width: 200px;
                         text-align: center;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 23px;
                         color: #475467;
@@ -4167,20 +4673,21 @@
                         }
 
                         h4 {
-                            font-weight: 600;
+                            font-weight: 400;
                             font-size: 18px;
                             line-height: 28px;
                             text-align: center;
                             color: $heading-color;
+                           // font-family: $font-family_Inter;
                         }
                     }
 
                     .content {
-                        font-weight: 500;
-                        font-size: 48px;
-                        line-height: 60px;
+                        font-weight: 300;
+                        font-size: 32px;
+                        line-height: 42px;
                         text-align: center;
-                        letter-spacing: -0.02em;
+                        letter-spacing: 0;
                         color: $heading-color;
                         margin-bottom: 30px;
 
@@ -4232,7 +4739,7 @@
                         }
 
                         .quote {
-                            font-weight: 500;
+                            font-weight: 300;
                             font-size: 36px;
                             line-height: 44px;
                             letter-spacing: -0.02em;
@@ -4248,14 +4755,15 @@
 
                         .author-name {
                             h4 {
-                                font-weight: 600;
+                                font-weight: 400;
                                 font-size: 18px;
                                 line-height: 28px;
                                 color: $heading-color;
+                               // font-family: $font-family_Inter;
                             }
 
                             span.designation {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 16px;
                                 line-height: 24px;
                                 color: #475467;
@@ -4281,14 +4789,14 @@
                     }
 
                     h3.title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: $heading-color;
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 24px;
                         color: #475467;
@@ -4302,7 +4810,7 @@
                     margin-bottom: 50px;
 
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 300;
                         font-size: 16px;
                         line-height: 24px;
                         color: #DA366F;
@@ -4311,7 +4819,7 @@
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         text-align: center;
@@ -4326,7 +4834,7 @@
 
                     .content {
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
@@ -4339,6 +4847,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 30px;
+                    justify-content: center;
 
                     .col-one {
                         width: 30%;
@@ -4383,7 +4892,7 @@
                     .pre-title {
                         display: inline-block;
                         margin-bottom: 10px;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
@@ -4394,20 +4903,20 @@
                         margin-bottom: 100px;
 
                         .btn-sweet {
-                            background: #da376f;
-                            border: 1px solid #da376f;
+                            background: $yellow;
+                            border: 1px solid $yellow;
                             box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
                             border-radius: 8px;
-                            font-weight: 600;
+                            font-weight: 300;
                             font-size: 14px;
                             line-height: 20px;
-                            color: #fff;
+                            color: #1A194F;
                             padding: 10px 20px;
                         }
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         text-align: center;
@@ -4423,6 +4932,7 @@
 
                     .content {
                         margin-bottom: 40px;
+                        color: $white;
                     }
                 }
 
@@ -4471,16 +4981,16 @@
 
                 .section-head {
                     span.pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
-                        color: $pest;
+                        color: $sweet;
                         display: block;
                         margin-bottom: 10px;
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 36px;
                         line-height: 44px;
                         letter-spacing: -0.02em;
@@ -4511,7 +5021,7 @@
                         }
 
                         .content {
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 20px;
                             line-height: 30px;
                             color: #475467;
@@ -4543,13 +5053,13 @@
 
                                 .content {
                                     width: calc(100% - 50px - 20px);
-                                    font-weight: 400;
+                                    font-weight: 300;
                                     font-size: 16px;
                                     line-height: 24px;
                                     color: #475467;
 
                                     h4 {
-                                        font-weight: 600;
+                                        font-weight: 300;
                                         font-size: 20px;
                                         line-height: 30px;
                                         color: $heading-color;
@@ -4576,7 +5086,7 @@
                     color: $white;
 
                     .pre-title {
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
                         text-align: center;
@@ -4586,7 +5096,7 @@
                     }
 
                     h2.title {
-                        font-weight: 600;
+                        font-weight: 200;
                         font-size: 48px;
                         line-height: 60px;
                         text-align: center;
@@ -4601,7 +5111,7 @@
                     }
 
                     .content {
-                        font-weight: 400;
+                        font-weight: 300;
                         font-size: 20px;
                         line-height: 30px;
                         color: #475467;
@@ -4641,13 +5151,13 @@
             section.inner-content {
                 padding-bottom: 50px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 300;
                 font-size: 18px;
                 line-height: 28px;
                 color: #475467;
 
                 h3 {
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 24px;
                     line-height: 32px;
                     color: $heading-color;
@@ -4663,26 +5173,27 @@
                 background-position: top center;
 
                 span.pre-title {
-                    color: #44999A;
+                    color: $yellow;
                     display: inline-block;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     line-height: 24px;
                     margin-bottom: 12px;
+                    //font-family: $font-Inter;
                 }
 
                 .title {
                     color: #ffffff;
                     font-size: 36px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 300;
                     line-height: 44px;
                     letter-spacing: -0.72px;
                     margin-bottom: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
                     gap: 20px;
 
                 }
@@ -4699,7 +5210,7 @@
                     color: #98A2B3;
                     font-size: 20px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 300;
                     line-height: 30px;
                     -moz-column-count: 2;
                     column-count: 2;
@@ -4711,7 +5222,7 @@
                         text-align: center;
                         font-size: 20px;
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 400;
                         line-height: 30px;
                         margin: 50px;
                         display: flex;
@@ -4732,6 +5243,7 @@
                     .video-container {
                         max-width: 1000px;
                         margin: 0 auto;
+                        overflow: hidden;
                     }
                 }
             }
@@ -4760,10 +5272,10 @@
                         align-items: center;
 
                         span.pre-title {
-                            color: #44999A;
+                            color: $sweet;
                             font-size: 16px;
                             font-style: normal;
-                            font-weight: 600;
+                            font-weight: 400;
                             line-height: 24px;
                             display: inline-block;
                             margin-bottom: 10px;
@@ -4772,7 +5284,7 @@
                         h2.title {
                             font-size: 36px;
                             font-style: normal;
-                            font-weight: 600;
+                            font-weight: 200;
                             line-height: 44px;
                             /* 122.222% */
                             letter-spacing: -0.72px;
@@ -4782,7 +5294,7 @@
                         .content {
                             font-size: 20px;
                             font-style: normal;
-                            font-weight: 400;
+                            font-weight: 300;
                             line-height: 30px;
                             color: #475467;
                             margin-bottom: 40px;
@@ -4816,6 +5328,7 @@
 
 
             section.our-values {
+                background-color: #F9FAFB;
                 padding: 96px 0;
 
                 @include mobile {
@@ -4833,7 +5346,7 @@
                         text-align: center;
                         font-size: 14px;
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 300;
                         line-height: 20px;
                         display: inline-block;
                         border-radius: 16px;
@@ -4847,7 +5360,7 @@
                         text-align: center;
                         font-size: 36px;
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 200;
                         line-height: 44px;
                         letter-spacing: -0.72px;
                         margin-bottom: 20px;
@@ -4858,7 +5371,7 @@
                         text-align: center;
                         font-size: 20px;
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         line-height: 30px;
                     }
                 }
@@ -4868,11 +5381,12 @@
                     flex-wrap: wrap;
                     padding: 64px;
                     gap: 32px;
+                    background: #F0F1F3;
 
                     .item {
                         width: calc(33.3% - 21px);
-                        border: 1px solid rgba(255, 255, 255, 0.60);
-                        background: rgba(255, 255, 255, 0.30);
+                        border: 1px #ffffff;
+                        background: #ffffff;
                         padding: 24px;
                         text-align: center;
 
@@ -4887,29 +5401,47 @@
                         }
 
                         h3.title {
-                            color: $white;
+                           // font-family: $font-family_Inter;
+                            color: #1A194F;
                             font-size: 18px;
                             font-style: normal;
-                            font-weight: 600;
+                            font-weight: 400;
                             line-height: 28px;
+
                         }
 
                         .item-content {
-                            color: $white;
-
+                            color: #1A194F;
+                            //font-family: $font-family_Inter;
                             font-size: 16px;
                             font-style: normal;
-                            font-weight: 400;
+                            font-weight: 300;
                             line-height: 24px;
                         }
                     }
                 }
             }
+            section.our-values{
+                
+                .section-head .content {
+                    color: #475467;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: 30px;
+                  }
+                  .metrics{
+                    background: #F0F1F3 !important;
+                  }
+              }
+
 
             .map-box {
                 margin: 0 auto;
                 width: 1024px;
                 height: 480px;
+
                 @media only screen and (max-width: 1024px) {
                     width: 100%;
                 }
@@ -4920,7 +5452,7 @@
                 z-index: 8;
                 width: 18px;
                 height: 18px;
-                color: #42999a;
+                color: $sweet;
                 display: block;
                 cursor: pointer;
                 font-size: 14px;
@@ -4939,6 +5471,307 @@
 
             .interactive-image .text-item .title {
                 text-align: center;
+            }
+
+            section.single-content {
+                padding: 80px 0 0;
+
+                .content-box {
+                    max-width: 885px;
+
+                    h1.title {
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 60px;
+                        /* 125% */
+                        letter-spacing: -0.96px;
+                        color: $heading-color;
+                        margin-bottom: 24px;
+                    }
+
+                    .content {
+                        color: $gray;
+                       // font-family: $font-family_Inter;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 30px;
+                        /* 150% */
+                    }
+                }
+
+
+                .breadcrumb {
+                    ol {
+                        margin: 0;
+
+                        li.breadcrumb-item {
+
+                            //font-family: $font-family_Inter;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 20px;
+
+                            &.active {
+                                color: $sweet;
+                            }
+
+                            a {
+                                color: #475467;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+
+            section.youtube-video {
+                padding: 50px 0;
+            }
+
+            .image-container {
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .inner-page-banner-without-img{
+                color: $white;
+                text-align: center;
+                padding: 95px 0;
+                @include mobile{
+                    padding: 50px 0;
+                }
+                
+                .content-box{
+                    .banner-box{
+                        .content-box{
+                            max-width: 800px;
+                            margin: 0 auto;
+                            
+                            .pre-header{
+                                color: $sweet;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 20px;
+                                border-radius: 16px;
+                                background: #FDF5F8;
+                                padding: 4px 16px;
+                                display: inline-block;
+                                margin-bottom: 16px;
+
+                            }
+                            h1.title{
+                                color: $white;
+                                text-align: center;
+                                font-size: 54px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 64px; /* 118.519% */
+                                letter-spacing: -1.08px;                                
+                                margin-bottom: 24px;
+                            }
+                            .content{
+                                color: #D0D5DD;
+                                text-align: center;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 30px;
+                                margin-bottom: 48px;
+                            }
+                        }
+                        .btn-container {
+                            ul {
+                                list-style: none;
+                                padding: 0;
+        
+                                li {
+                                    &:first-child {
+                                        a {
+                                            margin-right: 10px;
+                                        }
+                                    }
+        
+                                    display: inline-block;
+        
+                                    a.btn.btn-white {
+                                        background: $white;
+                                        border: 1px solid #D0D5DD;
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        color: #344054;
+                                        padding: 16px 28px;
+                                        display: inline-block;
+        
+                                        @include mobile {
+                                            font-size: 12px;
+                                            line-height: 22px;
+                                            padding: 10px 15px;
+                                        }
+                                    }
+        
+                                    a.btn.btn-pest {
+                                        padding: 16px 28px;
+                                        background: $sweet;
+                                        border: 1px solid $sweet;
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        color: $white;
+                                        display: inline-block;
+        
+                                        @include mobile {
+                                            font-size: 12px;
+                                            line-height: 22px;
+                                            padding: 10px 15px;
+                                        }
+                                    }
+        
+                                    a.btn.btn-pink {
+                                        padding: 16px 28px;
+                                        background: $sweet;
+                                        border: 1px solid $sweet;
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                        line-height: 28px;
+                                        color: $white;
+                                        display: inline-block;
+        
+                                        @include mobile {
+                                            font-size: 12px;
+                                            line-height: 22px;
+                                            padding: 10px 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.white-bg{
+                    background-color: $white !important;
+                    .content-box{
+                        h1.title {
+                            color: #1A194F !important;
+                        }
+                        .content{
+                            color: #1A194F !important;
+                        }
+                    }
+                }
+
+                .down-arrow-container{
+                    padding-top: 50px;
+                    .down-arrow {
+                        max-width: 68px;
+                        display: inline-block;
+                      }
+                }
+            }
+
+            section.testimonial-new {
+                padding: 96px 0;
+                background-color: $white;
+                h2.section_title {
+                    color: #101828;
+                    text-align: center;
+                    font-size: 65px;
+                    line-height: 75px;
+                    margin-bottom: 30px;
+                    @include mobile{
+                        font-size: 40px;
+                        line-height: 50px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                @include mobile{
+                    padding: 50px 0;
+                }
+                .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+                    bottom: 0;
+                    .swiper-pagination-bullet {
+                        background-color: $white;
+                      }
+                  }
+                
+                .testimonial-item{
+                    span.testi-content{
+                        color:  #101828;
+                        text-align: center;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: 60px;
+                        letter-spacing: -0.96px;
+                        max-width: 1200px;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 15px;
+                        @include mobile{
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                    }
+                    .author-info{
+                            text-align: center;
+                            margin-bottom: 30px;
+                            color: #344054;
+                        .author-img{
+                            width: 64px;
+                            height: 64px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin: 0 auto;
+                            margin-top: 32px;
+                            margin-bottom: 16px;
+                        }
+                        .author-name{
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 28px; 
+                            margin-bottom: 0;
+                        }
+                        span.author-designation{
+
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .thumb-slider{
+                    .logo{
+                        max-height: 56px;
+                        cursor: pointer;
+                    }
+                }
+
+                .swiper-slide-thumb-active .logo {
+                    border-bottom: 1px solid $yellow;
+                    img{
+                        max-height: 100%;
+                    }
+                }
+
+                
+
             }
 
             footer.footer {
@@ -4961,7 +5794,7 @@
 
                         .left-box {
                             width: 65%;
-                            font-weight: 400;
+                            font-weight: 300;
                             font-size: 20px;
                             line-height: 30px;
                             color: #EAECF0;
@@ -4974,7 +5807,7 @@
 
                             h2.title {
                                 font-style: normal;
-                                font-weight: 600;
+                                font-weight: 200;
                                 font-size: 30px;
                                 line-height: 38px;
                                 margin-bottom: 15px;
@@ -5007,7 +5840,7 @@
                                 border: 1px solid #C61551;
                                 border-radius: 8px;
                                 padding: 10px 24px;
-                                font-weight: 600;
+                                font-weight: 300;
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: $white;
@@ -5056,7 +5889,7 @@
                             .content {
                                 font-size: 16px;
                                 line-height: 24px;
-                                font-weight: 400;
+                                font-weight: 300;
                             }
                         }
 
@@ -5073,7 +5906,7 @@
 
                         .widget {
                             h3.title {
-                                font-weight: 400;
+                                font-weight: 300;
                                 font-size: 14px;
                                 line-height: 20px;
                                 text-transform: uppercase;
@@ -5090,7 +5923,7 @@
                                     display: block;
 
                                     a {
-                                        font-weight: 600;
+                                        font-weight: 300;
                                         font-size: 16px;
                                         line-height: 24px;
                                         color: #EAECF0;
@@ -5136,7 +5969,7 @@
                                     a {
                                         font-size: 16px;
                                         line-height: 24px;
-                                        font-weight: 400;
+                                        font-weight: 300;
                                         color: #D0D5DD;
                                         padding: 0 12px;
                                         border-right: 1px solid #D0D5DD;
@@ -5176,4 +6009,957 @@
                     }
                 }
             }
+
         }
+
+
+
+
+        body {
+            .menu-dropdown {
+                position: static;
+                display: none;
+                padding-top: 1rem;
+            }
+
+            @media (min-width: 992px) {
+
+                .menu-dropdown .container,
+                .menu-dropdown .container-xl {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
+
+            @media (min-width: 1200px) {
+                .menu-dropdown {
+                    display: block;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(10px);
+                    position: absolute;
+                    z-index: 2;
+                    top: calc(100% - 10px);
+                    left: 0;
+                    right: 0;
+                    background-color: #ffffff;
+                    overflow-x: hidden;
+                    border-bottom: 1px solid #ffffff;
+                    padding-top: 0;
+                    transition: all .5s
+                }
+
+                // .menu-dropdown .container,
+                // .menu-dropdown .container-xl {
+                //     padding-right: 5rem;
+                //     padding-left: 5rem;
+                // }
+            }
+
+            .menu-dropdown .container>.row>*:nth-child(2),
+            .menu-dropdown .container-xl>.row>*:nth-child(2) {
+                position: relative;
+                z-index: 1;
+                background-color: #F9FAFB;
+            }
+
+            .menu-dropdown .container>.row>*:nth-child(2):after,
+            .menu-dropdown .container-xl>.row>*:nth-child(2):after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                width: 33.33vw;
+                left: 100%;
+                display: block;
+                background-color: #F9FAFB;
+            }
+
+            @media (min-width: 1200px) {
+
+                .menu-dropdown .container>.row>*,
+                .menu-dropdown .container-xl>.row>* {
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+
+            @media (min-width: 1400px) {
+
+                .menu-dropdown .container>.row>*,
+                .menu-dropdown .container-xl>.row>* {
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+
+            .menu-dropdown .col-xl-8 {
+                position: relative;
+                z-index: 1;
+            }
+
+            .menu-dropdown .col-xl-8 .block-image {
+                position: absolute;
+                z-index: -1;
+                right: 0;
+                bottom: 0;
+                max-width: 50%;
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .col-xl-8 .block-image {
+                    max-width: none;
+                }
+            }
+
+            .menu-dropdown .col-xl-4 .block-image {
+                max-width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media (min-width: 1200px) {
+                .menu-dropdown .col-xl-4>* {
+                    padding-left: 3rem;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .col-xl-4>* {
+                    padding-left: 15px;
+                }
+            }
+
+            .menu-dropdown-title {
+                flex: 0 0 auto;
+                width: 100%;
+                padding: 0 50px 0 25px;
+                margin-bottom: 3rem;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                font-weight: 400;
+                color: #171716;
+            }
+
+            .menu-dropdown-column {
+                flex: 1 1 auto;
+                width: 100%;
+            }
+
+            .menu-dropdown-column:not(:first-child) {
+                padding-top: 1rem;
+            }
+
+            @media (min-width: 992px) {
+                .menu-dropdown-column {
+                    flex: 0 0 auto;
+                    width: 50%;
+                    padding: 0 25px;
+                }
+
+                .menu-dropdown-column:not(:first-child) {
+                    padding-top: 2rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .menu-dropdown-column {
+                    flex: 0 0 auto;
+                    //width: 33.33333333%;
+                    width: 50%;
+                    padding: 0 25px;
+                }
+
+                .menu-dropdown-column:not(:first-child) {
+                    padding-top: 0;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown-column {
+                    padding: 0 50px 0 25px;
+                }
+            }
+
+            .menu-dropdown .block-columns-item:not(:first-child) {
+                margin-top: 1rem;
+            }
+
+            @media (min-width: 992px) {
+                .menu-dropdown .block-columns-item:not(:first-child) {
+                    margin-top: 2rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .menu-dropdown .block-columns-item:not(:first-child) {
+                    margin-top: 3rem;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .block-columns-item:not(:first-child) {
+                    margin-top: 5rem;
+                }
+            }
+
+            .menu-dropdown .block-columns-links {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .menu-dropdown .block-columns-links-item:not(:first-child) {
+                margin-top: 1rem;
+            }
+
+            .menu-dropdown .block-columns-links-item a {
+                color: rgba(42, 16, 74, 0.82);
+                font-weight: 300;
+            }
+
+            @media (min-width: 1200px) {
+                .menu-dropdown .block-columns-links {
+                    margin-top: 2rem;
+                    margin-bottom: 0;
+                }
+
+                .menu-dropdown .block-columns-links-item:not(:first-child) {
+                    margin-top: 1rem;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .block-columns-links {
+                    margin-top: 3rem;
+                }
+
+                .menu-dropdown .block-columns-links-item:not(:first-child) {
+                    margin-top: 2rem;
+                }
+            }
+
+            .menu-dropdown .block-columns-text {
+                margin-top: 2rem;
+                color: #958AA5;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                font-weight: 300;
+            }
+
+            .menu-dropdown .block-columns .block-buttons {
+                margin-top: 4rem;
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .block-columns-text {
+                    margin-top: 3rem;
+                }
+            }
+
+            .menu-dropdown-jobs:not(:first-child) {
+                margin-top: 4.5rem;
+            }
+
+            .menu-dropdown .block-jobs-item {
+                overflow: hidden;
+                margin-top: 2rem;
+                display: flex;
+                background-color: #FFFFFF;
+                border-radius: 14px;
+            }
+
+            .menu-dropdown .block-jobs-item--post a {
+                color: #1F1F1F;
+            }
+
+            .menu-dropdown .block-jobs-image {
+                flex: 0 0 auto;
+                width: 90px;
+            }
+
+            .menu-dropdown .block-jobs-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: left center;
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .block-jobs-image {
+                    width: 130px;
+                }
+            }
+
+            .menu-dropdown .block-jobs-description {
+                flex: 1 1 auto;
+                padding: 10px 15px;
+            }
+
+            .menu-dropdown .block-jobs-title {
+                font-size: 1.2rem;
+                line-height: 1.7rem;
+                color: var(--blue);
+            }
+
+            .menu-dropdown .block-jobs-title a {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            .menu-dropdown .block-jobs-location {
+                margin-top: 5px;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                font-weight: 300;
+                color: #958AA5;
+            }
+
+            .menu-dropdown .block-jobs-date {
+                font-size: 1.2rem;
+                line-height: 2rem;
+                color: #C7CDCE;
+                font-weight: 300;
+                margin-top: 1rem;
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown .block-jobs-description {
+                    padding: 20px 25px;
+                }
+            }
+
+            .menu-dropdown-solutions .block-text {
+                max-width: 170px;
+                font-weight: normal;
+                margin-top: 2rem;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                color: #73759E;
+            }
+
+            .menu-dropdown-solutions .block-text:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            .menu-dropdown-solutions .block-subtitle {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown-solutions .block-text {
+                    margin-top: 3rem;
+                }
+
+                .menu-dropdown-solutions .block-text:not(:last-child) {
+                    margin-bottom: 5rem;
+                }
+            }
+
+            .menu-dropdown .block-solutions {
+                margin-top: 3rem;
+                border-bottom: 1px solid #707070;
+            }
+
+            .menu-dropdown .block-solutions-item {
+                border-top: 1px solid #707070;
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .menu-dropdown .block-solutions-title {
+                font-size: 1.2rem;
+            }
+
+            .menu-dropdown .block-solutions-image {
+                width: 25px;
+                margin-right: 15px;
+            }
+
+            .menu-dropdown-block {
+                max-width: 300px;
+            }
+
+            .menu-dropdown-posts:not(:first-child) {
+                margin-top: 3.5rem;
+            }
+
+            .menu-dropdown-posts .block-posts {
+                margin-top: 3rem;
+                max-width: 300px;
+                border-bottom: 1px solid #707070;
+            }
+
+            .menu-dropdown-posts .block-posts-item {
+                border-top: 1px solid #707070;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .menu-dropdown-posts .block-posts-title {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: 1400px) {
+                .menu-dropdown-posts:not(:first-child) {
+                    margin-top: 7.5rem;
+                }
+            }
+
+            .mega-menu-item {
+                position: inherit;
+              //  font-family: $font-Inter;
+
+                ul.dropdown-menu {
+                    display: none;
+                }
+
+                ul.dropdown-menu {
+                    display: none;
+
+                }
+
+                .menu-dropdown.show {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all .50s;
+                }
+
+
+
+
+                // &:hover{
+                //     .menu-dropdown {
+                //         visibility: visible;
+                //         opacity: 1;
+                //         transform: translateY(10px);
+                //     }
+                // }
+                .menu-dropdown {
+                    .articles {
+                        //font-family: $font-Inter;
+
+                        h2.title {
+                            color: #E8396A;
+                           // font-family: $font-Inter;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: 20px;
+                            margin-bottom: 22px;
+                        }
+
+                        .item {
+                            display: flex;
+                            gap: 24px;
+                            flex-wrap: wrap;
+                            margin-bottom: 20px;
+
+                            .image-container {
+                                width: 180px;
+                                height: 100px;
+                                border-radius: 8px;
+                            }
+
+                            .content-box {
+                                width: calc(100% - 24px - 180px);
+
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 20px;
+
+                                h3.title {
+
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 24px;
+                                }
+                                p{
+                                    margin-bottom: 10px;
+                                }
+                            }
+
+                            a.read-more {
+                                color: #E8396A;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                            }
+                        }
+                        .link-container{
+                            .link{
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px; 
+                                color: $sweet;
+                                position: relative;
+
+                                &::after {
+                                    content: "";
+                                    width: 18px;
+                                    height: 15px;
+                                    background: url(../images/arrow-right.png);
+                                    background-size: cover;
+                                    display: inline-block;
+                                    background-size: cover;
+                                    top: 10%;
+                                    position: absolute;
+                                    right: -25px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .block-columns-item:not(:first-child) {
+                    margin-top: 0;
+
+                    @include mobile {
+                        margin-top: 0;
+                    }
+                }
+
+
+
+
+                .mega-menu-col-item {
+                    display: flex;
+                    align-items: top;
+                    flex-wrap: wrap;
+
+                    .icon {
+                        width: 25px;
+                        display: inline-block;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .title-content {
+                        display: inline-block;
+                        width: calc(100% - 25px);
+                        padding-left: 16px;
+                        margin-bottom: 20px;
+
+                        a.link {
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: $heading-color;
+                            margin-bottom: 10px;
+                            display: inline-block;
+                        }
+
+
+                        .block-columns-text.content {
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 20px;
+                            color: #475467;
+                            margin: 0 0 15px;
+                        }
+                    }
+
+
+
+                }
+
+
+            }
+
+        }
+
+        body{
+            section.partners {
+                background-color: #F9FAFB;
+                padding: 35px;
+                .content-box{
+                    display: block;
+                    text-align: center;
+                    .content{
+                        color: #07074E;
+                        font-family: $font-lexend;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    
+                    .logo-carousel {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .horizental-accordion{
+                .accordion.width {
+                    border: 1px solid rgba(0, 0, 0, 0.125);
+                    display: flex;
+                }
+                
+                .accordion.width .accordion-item {
+                    display:flex;   
+                    flex-direction: row;
+                    flex-grow: 0;
+                    flex-shrink: 1;
+                    min-width: min-content;
+                    border: none;
+                    min-height: 450px;
+                }
+                
+                .accordion.width .accordion-item .accordion-header{
+                    cursor: pointer;
+                    transform: rotate(180deg);
+                    writing-mode: vertical-rl;
+                    margin: 0;
+                    margin: 0 5px 0 0;
+                    button.accordion-button {
+                        background: #F9FAFB !important;
+                        font-size: 24px;
+                        font-weight: 200;
+                        font-family: $font-Inter;
+                        height: 100%;
+                        color: #101828;
+                        &[aria-expanded="true"]{
+                            color:#E8396A;
+                        }
+                        
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .accordion-button{
+                    display: block;
+                    height: 100%;
+                }
+            }
+
+            section.featurs-three-col-with-screen.style-5 {
+                padding: 96px 0 0;
+                background-color: #e7e7e7;
+             .content-box {
+                    
+                    text-align: center;
+                    padding-bottom: 30px;
+
+                    h2.title{
+                        color:  #101828;
+                        text-align: center;
+                        font-family: $font-lexend;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 44px;
+                        letter-spacing: -0.72px;
+                        max-width: 768px;
+                        margin: 0 auto;
+                    }
+                }
+
+
+                .service-list {
+                    padding-top: 65px;
+                    font-family: $font-Inter;
+                    margin-bottom: 50px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 30px;
+
+                        li {
+                            display: block;
+                            width: calc(33.3% - 20px);
+                            gap: 30px;
+                            .service {
+                                display: flex;
+                                gap: 16px;
+                                flex-wrap: wrap;
+                              }
+
+                            @include mobile {
+                                width: 100%;
+                            }
+
+                            .icon {
+                                width: 50px;
+                            }
+
+                            .content {
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 30px;
+                                text-align: left;
+                                color: #475467;
+                                margin-bottom: 20px;
+                                width: calc(100% - 50px - 16px);
+
+                                h3 {
+                                    font-weight: 300;
+                                    font-size: 26px;
+                                    line-height: 30px;
+                                    text-align: left;
+                                    color: #101828
+                                }
+                            }
+
+                            // a.link {
+                            //     font-weight: 300;
+                            //     font-size: 16px;
+                            //     line-height: 24px;
+                            //     color: #DA366F;
+                            //     position: relative;
+
+                            //     &::after {
+                            //         content: "";
+                            //         width: 20px;
+                            //         height: 15px;
+                            //         background: url(../images/arrow-right.png);
+                            //         display: inline-block;
+                            //         background-size: cover;
+                            //         top: 10%;
+                            //         position: absolute;
+                            //         right: -30px;
+                            //     }
+                            // }
+                        }
+                    }
+                }
+
+                
+            }
+            section.cta{
+                background-color: #F0F1F3;
+                h2.title {
+                    color: #000;
+                  }
+                  .btn.btn-gold{
+                    &::after {
+                        content: "";
+                        height: 13px;
+                        width: 14px;
+                        background: url('../images/arrow-right-white.png');
+                        display: inline-block;
+                        background-size: cover;
+                        margin-left: 5px;
+                    }
+                  }
+                  
+            }
+
+            section.home-contact-us .contact-form .gform_title.h2, body section.home-contact-us .contact-form h2.gform_title {
+                font-weight: 200;
+                font-size: 36px;
+                font-style: normal;
+                line-height: 44px;
+                letter-spacing: -.72px;
+                background: linear-gradient(90.36deg,#a32b77 5.74%,#7115ac 40.67%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                margin-bottom: 20px;
+            }
+            a.btn.pill-gradient, body .btn-sweet, body section.inner-contact .contact-form .gform_footer .gform_button, a.btn.btn-pest, body .btn.btn-pink, body section.inner-newsletter .banner-newsletter button.btn.btn-newsletter, body .btn-gold, a.btn.btn-green, body section.home-contact-us .contact-form .gform_footer .gform_button, body ul.navbar-nav > li:last-child a{
+                border-radius: 50px !important;
+            }
+
+            section.features {
+                background: #fff;
+              }
+
+              section.content-center.text_black_center_bg_style_2{
+                .banner-content{
+                    h1.title{
+                        color:  #101828;
+                        text-align: center;
+                        font-family: $font-lexend;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: 60px;
+                    }
+                    .content{
+                        color: #344054;
+                    }
+                }
+                
+              }
+
+              .inner-page-banner-without-img .content-box{
+                .banner-box {
+                    //background-color: #F9FAFB;
+                    padding: 60px 0;
+                    .content-box h1.title{
+                        font-size: 36px;
+                        line-height: 44px;
+                       }
+                  }
+              }
+
+              .inner-banner-without-img.style_2 {
+                .banner-content{
+                    h1.title{
+                        color: #101828;
+                    }
+                    span.pre-title{
+                        color: #344054;
+                    }
+                } 
+                
+              }
+
+              section.three-column-text-with-icon {
+                background-color: #F9FAFB;
+                .right-col .item{
+                    background: #ffffff;
+                }
+              }
+              body section.our-team{
+                background-color: #F9FAFB;
+              }
+
+              footer.footer{
+
+               .footer-middle {
+                background-color: #F0F1F3;
+                padding: 50px;
+                color: #1A194F;
+                .footer-columns{
+                    .widget{
+                        h3.title {
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                            color: rgba(26, 25, 79, 0.50);
+                            margin-bottom: 20px;
+                          }
+                          ul li a{
+                            color: #1A194F;
+                        }
+                    } 
+    
+                }                  
+              }
+
+              .footer-bottom {
+                background-color: #F0F1F3;
+                color: rgba(26, 25, 79, 0.80);
+
+                .social-menu .footer-menu ul li a {                  
+                    color: rgba(26, 25, 79, 0.80);                  
+                    border-right: 1px solid rgba(26, 25, 79, 0.80);
+                  }
+
+                  .social-menu .social-icons ul li a{
+                    color: rgba(26, 25, 79, 0.80);     
+                  }
+              }
+
+            }
+
+            section.quotes .quote{
+
+             .content {
+                font-weight: 200;
+                font-size: 26px;
+                line-height: 42px;
+                text-align: center;
+                letter-spacing: 0;
+                color: #101828;
+                max-width: 880px;
+                margin: 0 auto;
+              }
+
+              .author-info{
+                text-align: center;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 23px;
+                color: #344054;
+                max-width: 400px;
+                h4 {
+                    font-weight: 200;
+                    font-size: 18px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #344054;
+                  }
+              } 
+
+            }
+
+            section.contact-address .address .item {
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+                color: #1A194F;
+                font-weight: 200;
+                h3 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #1A194F;
+                    margin-bottom: 10px;
+                  }
+              }
+
+              section.news .news-list .item article .post-meta {
+                color: #E8396A;
+            }
+           section.news .news-list .item article a.link{
+            background: rgba(232, 57, 106, 0.10);    
+            color: #E8396A;
+           }
+
+           section.metric .matric-list ul li.matric-item .number-with-text .content {            
+            min-height: 50px;
+            align-items: center;
+            display: flex;
+        }
+
+        section.inner-page-banner-without-img.gray-bg{
+            background-color: #ffffff !important;
+            .banner-box{
+                background-color: #F9FAFB !important;
+                .content-box {
+                   
+                    .content{
+                        color: #475467 !important;
+                    }
+                    h1.title {
+                        color: #101828 !important;
+                    }
+                  }
+            } 
+        }
+
+        
+             
+    
+
+
+
+               
+        } 

@@ -7,11 +7,19 @@ $text-color: #475467;
 $theme-black:#07101A;
 $heading-color:#101828;
 $navy:#08084E;
+$navy_2: #1A194F;
 $pest:#44999A;
-$sweet:#DA376F;
+//$sweet:#DA376F;
+$sweet:#e8396a;
 $white:#FFFFFF;
 $gray: #475467;
 $silver: #F9FAFB;
+$yellow: #F1A848;
+$gray-black: #101828;
+$gray-p: rgba(7, 16, 25, 0.75);
+$font-family_Inter: 'Inter', sans-serif;
+$font-Inter: 'Inter', sans-serif;
+$font-lexend: 'Lexend Deca', sans-serif;
 @mixin tab {
     @media (max-width: 991px) {
         @content;
